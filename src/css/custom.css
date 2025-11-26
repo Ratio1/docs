@@ -191,6 +191,27 @@
   color: #6b87fa;
 }
 
+.footer__served-by-version {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer__served-by-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 10px;
+  border: 1px solid #e0e4ff;
+  background: #f5f7ff;
+  color: #0b0b47;
+  font-weight: 700;
+}
+
+.footer__served-by-version-value {
+  font-weight: 800;
+}
+
 .search-trigger-pill {
   display: inline-flex;
   align-items: center;

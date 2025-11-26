@@ -7,7 +7,12 @@ export default function SearchBar(): JSX.Element {
 
   const buildLabel =
     typeof process !== 'undefined' && process.env
-      ? process.env.BUILD_HASH ?? process.env.VERSION ?? 'local'
+      ? process.env.NEXT_PUBLIC_VERSION_HASH ??
+        process.env.BUILD_HASH ??
+        process.env.VERCEL_GIT_COMMIT_SHA ??
+        process.env.GIT_COMMIT_SHA ??
+        process.env.VERSION ??
+        'local'
       : 'local';
 
   const openModal = useCallback(() => setOpen(true), []);
