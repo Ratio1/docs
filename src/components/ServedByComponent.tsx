@@ -6,7 +6,9 @@ const envHost =
       process.env.RATIO1_NODE ??
       process.env.HOST_ID ??
       process.env.HOSTNAME ??
-      process.env.EE_HOST_ID
+      process.env.EE_HOST_ID ??
+      process.env.VERCEL_URL ??
+      process.env.VERCEL_REGION
     : undefined;
 const buildTimeHost = envHost ?? 'unknown';
 
@@ -46,6 +48,7 @@ export default function ServedBy(): JSX.Element {
           cache: 'no-store',
         });
         const headerVal =
+          resp.headers.get('x-vercel-id') ??
           resp.headers.get('x-ratio1-id') ??
           resp.headers.get('x-edge-id') ??
           resp.headers.get('x-server-id') ??
@@ -64,6 +67,7 @@ export default function ServedBy(): JSX.Element {
           cache: 'no-store',
         });
         const headerVal =
+          resp.headers.get('x-vercel-id') ??
           resp.headers.get('x-ratio1-id') ??
           resp.headers.get('x-edge-id') ??
           resp.headers.get('x-server-id') ??
