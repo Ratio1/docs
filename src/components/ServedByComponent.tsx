@@ -23,7 +23,7 @@ const buildVersion =
 
 export default function ServedBy(): JSX.Element {
   const [hostId, setHostId] = useState<string>(buildTimeHost);
-  const [versionHash] = useState<string>(buildVersion ?? 'unknown');
+  const versionHash = buildVersion ?? 'unknown';
 
   useEffect(() => {
     let cancelled = false;
