@@ -34,51 +34,36 @@ export default function ServedBy(): JSX.Element {
       }
     };
 
-    const metaHost =
-      document.querySelector('meta[name="server-id"]')?.getAttribute('content') ||
-      document.documentElement?.dataset?.hostId;
-    if (metaHost) {
-      setSafe(metaHost);
-    }
+    const getHeaderVal = (resp: Response) =>
+      resp.headers.get('x-ratio1-id') ??
+      resp.headers.get('x-edge-id') ??
+      resp.headers.get('x-server-id') ??
+      resp.headers.get('x-vercel-id') ??
+      resp.headers.get('server');
 
     const fetchHeader = async () => {
-      try {
-        const resp = await fetch(window.location.pathname || '/', {
-          method: 'HEAD',
-          cache: 'no-store',
-        });
-        const headerVal =
-          resp.headers.get('x-vercel-id') ??
-          resp.headers.get('x-ratio1-id') ??
-          resp.headers.get('x-edge-id') ??
-          resp.headers.get('x-server-id') ??
-          resp.headers.get('server');
-        if (headerVal) {
-          setSafe(headerVal);
-          return;
+      const tryRequest = async (method: 'HEAD' | 'GET') => {
+        try {
+          const resp = await fetch(window.location.pathname || '/', {
+            method,
+            cache: 'no-store',
+          });
+          const headerVal = getHeaderVal(resp);
+          if (headerVal) {
+            const lower = headerVal.toLowerCase();
+            if (lower !== 'cloudflare' && lower !== 'unknown') {
+              setSafe(headerVal);
+              return true;
+            }
+          }
+        } catch {
+          // ignore
         }
-      } catch {
-        // ignore
-      }
+        return false;
+      };
 
-      try {
-        const resp = await fetch(window.location.pathname || '/', {
-          method: 'GET',
-          cache: 'no-store',
-        });
-        const headerVal =
-          resp.headers.get('x-vercel-id') ??
-          resp.headers.get('x-ratio1-id') ??
-          resp.headers.get('x-edge-id') ??
-          resp.headers.get('x-server-id') ??
-          resp.headers.get('server');
-        if (headerVal) {
-          setSafe(headerVal);
-          return;
-        }
-      } catch {
-        // ignore
-      }
+      if (await tryRequest('HEAD')) return;
+      if (await tryRequest('GET')) return;
 
       const fallbackHost = window.location.host || window.location.hostname;
       setSafe(fallbackHost);
