@@ -35,6 +35,13 @@ const config: Config = {
     locales: ["en"],
   },
 
+  customFields: {
+    eeHostId:
+      process.env.DANGEROUSLY_EXPOSE_TO_CLIENT_EE_HOST_ID ??
+      process.env.EE_HOST_ID ??
+      "local",
+  },
+
   presets: [
     [
       "classic",

@@ -1,11 +1,11 @@
 import React from "react";
-
-const envHost =
-	(typeof process !== "undefined" && process.env
-		? process.env.EE_HOST_ID
-		: undefined) ?? "local";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 export default function ServedBy(): JSX.Element {
+	const { siteConfig } = useDocusaurusContext();
+	const envHost =
+		(siteConfig?.customFields as { eeHostId?: string })?.eeHostId ?? "local";
+
 	return (
 		<div className="footer__served-by">
 			<span className="footer__served-by-label">
