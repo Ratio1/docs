@@ -1,14 +1,14 @@
 import React, {useCallback, useEffect, useRef, useState} from 'react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import OriginalSearchBar from '@theme-original/SearchBar';
 
 export default function SearchBar(): JSX.Element {
   const [open, setOpen] = useState(false);
   const modalRef = useRef<HTMLDivElement | null>(null);
+  const {siteConfig} = useDocusaurusContext();
 
   const buildLabel =
-    typeof process !== 'undefined' && process.env
-      ? process.env.BUILD_HASH ?? process.env.VERSION ?? 'local'
-      : 'local';
+    (siteConfig?.customFields as {buildHash?: string})?.buildHash ?? 'local';
 
   const openModal = useCallback(() => setOpen(true), []);
   const closeModal = useCallback(() => setOpen(false), []);

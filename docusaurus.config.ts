@@ -40,6 +40,12 @@ const config: Config = {
       process.env.DANGEROUSLY_EXPOSE_TO_CLIENT_EE_HOST_ID ??
       process.env.EE_HOST_ID ??
       "local",
+    buildHash:
+      process.env.DANGEROUSLY_EXPOSE_TO_CLIENT_BUILD_HASH ??
+      process.env.DANGEROUSLY_EXPOSE_TO_CLIENT_VERSION ??
+      process.env.BUILD_HASH ??
+      process.env.VERSION ??
+      "local",
   },
 
   presets: [
