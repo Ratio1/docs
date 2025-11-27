@@ -110,8 +110,8 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    // Social card for link previews
+    image: "img/Ratio1Docs.png",
     metadata: [
       {
         name: "description",

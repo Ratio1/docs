@@ -188,7 +188,7 @@
 
 .footer__served-by-id {
   font-weight: 800;
-  color: #6b87fa;
+  color: var(--ifm-color-primary);
 }
 
 .search-trigger-pill {
@@ -256,6 +256,11 @@
   border: 1px solid var(--ifm-color-emphasis-200);
   background: var(--ifm-background-surface-color);
   color: var(--ifm-color-emphasis-700);
+}
+
+.search-trigger-version .version-hash {
+  color: var(--ifm-color-primary);
+  font-weight: 800;
 }
 
 .navbar__icon-button {

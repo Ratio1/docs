@@ -113,7 +113,12 @@ export default function SearchBar(): JSX.Element {
   return (
     <>
       <div className="search-trigger-row">
-        <span className="search-trigger-version">v.{buildLabel}</span>
+        <span className="search-trigger-version">
+          v.
+          <span className="version-hash">
+            <strong>{buildLabel}</strong>
+          </span>
+        </span>
         <button
           type="button"
           className="search-trigger-pill"

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /
+title: Ratio1 - Docs
 ---
 
 # Welcome
