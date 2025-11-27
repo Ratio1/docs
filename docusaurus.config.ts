@@ -116,12 +116,24 @@ const config: Config = {
       {
         name: "description",
         content:
-          "Ratio1 documentation covering network concepts, CSP onboarding, node operator setup, and developer guides.",
+          "Ratio1 Docs is your guide to building on the Ratio1 Protocol and AI OS—covering CSP onboarding, node operations, and developer integrations to unlock decentralized AI and edge compute.",
       },
       {
         name: "keywords",
         content:
           "ratio1, decentralized compute, edge network, documentation, node operator, cloud service provider, developer docs",
+      },
+      { property: "og:title", content: "Ratio1 - Docs" },
+      {
+        property: "og:description",
+        content:
+          "Ratio1 Docs is your guide to building on the Ratio1 Protocol and AI OS—covering CSP onboarding, node operations, and developer integrations to unlock decentralized AI and edge compute.",
+      },
+      { name: "twitter:title", content: "Ratio1 - Docs" },
+      {
+        name: "twitter:description",
+        content:
+          "Ratio1 Docs is your guide to building on the Ratio1 Protocol and AI OS—covering CSP onboarding, node operations, and developer integrations to unlock decentralized AI and edge compute.",
       },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@ratio1ai" },
