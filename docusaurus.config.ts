@@ -9,10 +9,24 @@ const buildHashFromEnv =
 	process.env.DANGEROUSLY_EXPOSE_TO_CLIENT_BUILD_HASH ??
 	process.env.DANGEROUSLY_EXPOSE_TO_CLIENT_VERSION ??
 	process.env.BUILD_HASH ??
-	process.env.VERSION;
+	process.env.VERSION ??
+	process.env.VERCEL_GIT_COMMIT_SHA ??
+	process.env.VERCEL_GIT_COMMIT_SHA_SHORT ??
+	process.env.NETLIFY_COMMIT_REF ??
+	process.env.CF_PAGES_COMMIT_SHA ??
+	process.env.GITHUB_SHA ??
+	process.env.CI_COMMIT_SHA ??
+	process.env.CIRCLE_SHA1;
+
+const looksLikePlaceholder = (value?: string) =>
+	!!value &&
+	(value.includes("$(") ||
+		value.includes("${") ||
+		value.trim().startsWith("$") ||
+		value.trim().startsWith(".$("));
 
 const resolvedBuildHash = (() => {
-	if (buildHashFromEnv && !buildHashFromEnv.includes("$(")) {
+	if (buildHashFromEnv && !looksLikePlaceholder(buildHashFromEnv)) {
 		return buildHashFromEnv;
 	}
 	try {
