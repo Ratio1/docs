@@ -1,8 +1,26 @@
 import { themes as prismThemes } from "prism-react-renderer";
+import { execSync } from "child_process";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
+const buildHashFromEnv =
+	process.env.DANGEROUSLY_EXPOSE_TO_CLIENT_BUILD_HASH ??
+	process.env.DANGEROUSLY_EXPOSE_TO_CLIENT_VERSION ??
+	process.env.BUILD_HASH ??
+	process.env.VERSION;
+
+const resolvedBuildHash = (() => {
+	if (buildHashFromEnv && !buildHashFromEnv.includes("$(")) {
+		return buildHashFromEnv;
+	}
+	try {
+		return execSync("git rev-parse --short HEAD").toString().trim();
+	} catch {
+		return "local";
+	}
+})();
 
 const config: Config = {
   title: "Ratio1 - Docs",
@@ -40,12 +58,7 @@ const config: Config = {
       process.env.DANGEROUSLY_EXPOSE_TO_CLIENT_EE_HOST_ID ??
       process.env.EE_HOST_ID ??
       "local",
-    buildHash:
-      process.env.DANGEROUSLY_EXPOSE_TO_CLIENT_BUILD_HASH ??
-      process.env.DANGEROUSLY_EXPOSE_TO_CLIENT_VERSION ??
-      process.env.BUILD_HASH ??
-      process.env.VERSION ??
-      "local",
+    buildHash: resolvedBuildHash,
   },
 
   presets: [
