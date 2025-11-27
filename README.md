@@ -1,6 +1,6 @@
-# Website
+# Ratio1 Docs Template
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This repo is a customized Docusaurus v3 starter tailored for deploying documentation on Ratio1 edge nodes. It keeps the classic DX while adding Ratio1-specific branding, metadata, and hooks (build hash display, edge host indicator) so you can ship a docs site that fits the Ratio1 ecosystem out of the box.
 
 ## Installation
 
@@ -25,17 +25,4 @@ yarn build
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 ## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Deploy the generated `build/` directory to your Ratio1 edge node or preferred static hosting. The template also supports standard Docusaurus deploy flows if you want GitHub Pages or similar.
