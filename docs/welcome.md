@@ -2,11 +2,12 @@
 sidebar_position: 1
 slug: /
 title: Ratio1 - Docs
+description: Ratio1 Docs is the guide to building on the Ratio1 Protocol and AI OS—covering CSP onboarding, node operations, and developer integrations.
 ---
 
-# Welcome
+# Welcome to Ratio1 Docs
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Your guide to the Ratio1 Protocol and AI OS: learn how to onboard as a CSP, operate nodes, and build decentralized AI and edge compute experiences.
 
 ## Getting Started
 

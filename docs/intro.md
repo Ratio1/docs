@@ -1,10 +1,12 @@
 ---
 sidebar_position: 2
+title: Ratio1 Overview
+description: Overview of the Ratio1 Protocol and AI OS, with links to CSP onboarding, node operations, and developer resources.
 ---
 
-# Introduction
+# Ratio1 Overview
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Start here to explore the Ratio1 Protocol and AI OS—how the network works, how to join as a CSP, run nodes, and build on top of Ratio1.
 
 ## Getting Started
 
