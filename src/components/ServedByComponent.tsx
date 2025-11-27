@@ -1,8 +1,11 @@
 import React from "react";
 
-export default function ServedBy(): JSX.Element {
-	const envHost = process.env.EE_HOST_ID ?? "local";
+const envHost =
+	(typeof process !== "undefined" && process.env
+		? process.env.EE_HOST_ID
+		: undefined) ?? "local";
 
+export default function ServedBy(): JSX.Element {
 	return (
 		<div className="footer__served-by">
 			<span className="footer__served-by-label">
