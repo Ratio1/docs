@@ -1,0 +1,19 @@
+---
+title: Stats and Analytics
+sidebar_position: 3
+description: how to use the Explorer to view stats and analytics
+---
+
+# Stats and Analytics
+
+This page covers how to use the Explorer to view stats and analytics.
+
+## What this covers
+- Core concepts and definitions for this topic.
+- Practical guidance and recommended next steps.
+
+## Notable date
+- TBD (add a source link).
+
+## Next steps
+- Back to [The Explorer](../).

@@ -1,0 +1,8 @@
+{
+  "label": "Go",
+  "position": 3,
+  "link": {
+    "type": "doc",
+    "id": "developers/go/index"
+  }
+}

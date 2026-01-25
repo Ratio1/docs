@@ -1,8 +1,8 @@
 {
-  "label": "Cloud Service Providers",
-  "position": 6,
+  "label": "For CSPs",
+  "position": 4,
   "link": {
-    "type": "generated-index",
-    "description": "5 minutes to learn the most important Docusaurus concepts."
+    "type": "doc",
+    "id": "cloud-service-providers/index"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "label": "R1FS Demo",
+  "position": 1,
+  "link": {
+    "type": "doc",
+    "id": "application-templates/r1fs-demo/index"
+  }
+}

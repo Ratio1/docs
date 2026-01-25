@@ -1,0 +1,8 @@
+{
+  "label": "RedMesh Demo",
+  "position": 2,
+  "link": {
+    "type": "doc",
+    "id": "application-templates/redmesh-demo/index"
+  }
+}

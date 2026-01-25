@@ -1,13 +1,12 @@
 ---
-title: Ratio1 Docs
+title: Telegram Bot
 sidebar_position: 1
-slug: /
-description: welcome message
+description: using the Ratio1 Telegram Bot
 ---
 
-# Ratio1 Docs
+# Telegram Bot
 
-This page covers welcome message.
+This page covers using the Ratio1 Telegram Bot.
 
 ## What this covers
 - Core concepts and definitions for this topic.
@@ -15,3 +14,6 @@ This page covers welcome message.
 
 ## Notable date
 - TBD (add a source link).
+
+## Next steps
+- Back to [Other Tools](../).

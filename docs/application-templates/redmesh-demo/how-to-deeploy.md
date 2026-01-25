@@ -1,13 +1,12 @@
 ---
-title: Ratio1 Docs
+title: How to Deeploy
 sidebar_position: 1
-slug: /
-description: welcome message
+description: deployment details of RedMesh Demo
 ---
 
-# Ratio1 Docs
+# How to Deeploy
 
-This page covers welcome message.
+This page covers deployment details of RedMesh Demo.
 
 ## What this covers
 - Core concepts and definitions for this topic.
@@ -15,3 +14,6 @@ This page covers welcome message.
 
 ## Notable date
 - TBD (add a source link).
+
+## Next steps
+- Back to [RedMesh Demo](../).

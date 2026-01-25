@@ -1,13 +1,12 @@
 ---
-title: Ratio1 Docs
+title: r1ctl Overview
 sidebar_position: 1
-slug: /
-description: welcome message
+description: overview presentation with no details
 ---
 
-# Ratio1 Docs
+# r1ctl Overview
 
-This page covers welcome message.
+This page covers overview presentation with no details.
 
 ## What this covers
 - Core concepts and definitions for this topic.
@@ -15,3 +14,6 @@ This page covers welcome message.
 
 ## Notable date
 - TBD (add a source link).
+
+## Next steps
+- Back to [r1ctl](../).
