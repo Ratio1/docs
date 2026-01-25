@@ -7,32 +7,8 @@ export default function SearchBar(): JSX.Element {
   const modalRef = useRef<HTMLDivElement | null>(null);
   const {siteConfig} = useDocusaurusContext();
 
-  const initialBuildHash =
-    (siteConfig?.customFields as {buildHash?: string})?.buildHash ?? 'local';
-  const [buildLabel, setBuildLabel] = useState(initialBuildHash);
-
-  useEffect(() => {
-    let cancelled = false;
-    const fetchRuntimeHash = async () => {
-      try {
-        const res = await fetch(window.location.pathname || '/', {
-          method: 'HEAD',
-          cache: 'no-store',
-        });
-        const headerHash =
-          res.headers.get('x-commit-hash') ?? res.headers.get('x-build-hash');
-        if (headerHash && !cancelled) {
-          setBuildLabel(headerHash);
-        }
-      } catch {
-        // ignore
-      }
-    };
-    void fetchRuntimeHash();
-    return () => {
-      cancelled = true;
-    };
-  }, []);
+  const versionLabel =
+    (siteConfig?.customFields as {appVersion?: string})?.appVersion ?? 'local';
 
   const openModal = useCallback(() => setOpen(true), []);
   const closeModal = useCallback(() => setOpen(false), []);
@@ -116,7 +92,7 @@ export default function SearchBar(): JSX.Element {
         <span className="search-trigger-version">
           v.
           <span className="version-hash">
-            <strong>{buildLabel}</strong>
+            <strong>{versionLabel}</strong>
           </span>
         </span>
         <button

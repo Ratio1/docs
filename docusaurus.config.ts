@@ -1,22 +1,19 @@
 import { themes as prismThemes } from "prism-react-renderer";
-import { execSync } from "child_process";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-const buildHashFromEnv =
-	process.env.DANGEROUSLY_EXPOSE_TO_CLIENT_BUILD_HASH ??
+const appVersionFromEnv =
 	process.env.DANGEROUSLY_EXPOSE_TO_CLIENT_VERSION ??
-	process.env.BUILD_HASH ??
-	process.env.VERSION ??
-	process.env.VERCEL_GIT_COMMIT_SHA ??
-	process.env.VERCEL_GIT_COMMIT_SHA_SHORT ??
-	process.env.NETLIFY_COMMIT_REF ??
-	process.env.CF_PAGES_COMMIT_SHA ??
-	process.env.GITHUB_SHA ??
-	process.env.CI_COMMIT_SHA ??
-	process.env.CIRCLE_SHA1;
+	process.env.NEXT_PUBLIC_APP_VERSION ??
+	process.env.APP_VERSION ??
+	process.env.VERSION;
+
+const commitHashFromEnv =
+	process.env.DANGEROUSLY_EXPOSE_TO_CLIENT_COMMIT_HASH ??
+	process.env.NEXT_PUBLIC_COMMIT_HASH ??
+	process.env.COMMIT_HASH;
 
 const looksLikePlaceholder = (value?: string) =>
 	!!value &&
@@ -25,15 +22,14 @@ const looksLikePlaceholder = (value?: string) =>
 		value.trim().startsWith("$") ||
 		value.trim().startsWith(".$("));
 
-const resolvedBuildHash = (() => {
-	if (buildHashFromEnv && !looksLikePlaceholder(buildHashFromEnv)) {
-		return buildHashFromEnv;
+const resolvedAppVersion = (() => {
+	if (appVersionFromEnv && !looksLikePlaceholder(appVersionFromEnv)) {
+		return appVersionFromEnv;
 	}
-	try {
-		return execSync("git rev-parse --short HEAD").toString().trim();
-	} catch {
-		return "local";
+	if (commitHashFromEnv && !looksLikePlaceholder(commitHashFromEnv)) {
+		return commitHashFromEnv.slice(0, 7);
 	}
+	return "local";
 })();
 
 const config: Config = {
@@ -72,7 +68,7 @@ const config: Config = {
       process.env.DANGEROUSLY_EXPOSE_TO_CLIENT_EE_HOST_ID ??
       process.env.EE_HOST_ID ??
       "local",
-    buildHash: resolvedBuildHash,
+    appVersion: resolvedAppVersion,
   },
 
   presets: [
