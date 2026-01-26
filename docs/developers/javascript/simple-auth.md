@@ -6,8 +6,6 @@ description: using SDK simple auth with the JavaScript SDK
 
 # Simple auth
 
-This page covers using SDK simple auth with the JavaScript SDK.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

@@ -6,8 +6,6 @@ description: frequently asked questions & troubleshooting
 
 # r1setup FAQ
 
-This page covers frequently asked questions & troubleshooting.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

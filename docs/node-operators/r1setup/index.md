@@ -5,8 +5,6 @@ sidebar_position: 2
 
 # Managing Edge Nodes with r1setup
 
-This page introduces the topic and explains how it fits into the Ratio1 docs.
-
 ## In this section
 - [r1setup Overview](./r1setup-overview)
 - [r1setup Quick Setup](./r1setup-quick-setup)

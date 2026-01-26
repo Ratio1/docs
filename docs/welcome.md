@@ -7,8 +7,6 @@ description: welcome message
 
 # Ratio1 Docs
 
-This page covers welcome message.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

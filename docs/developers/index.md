@@ -6,8 +6,6 @@ description: introduction to developing on Ratio1
 
 # For Developers
 
-This page covers introduction to developing on Ratio1.
-
 ## In this section
 - [Python](./python/)
 - [JavaScript](./javascript/)

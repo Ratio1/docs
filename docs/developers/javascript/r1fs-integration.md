@@ -6,8 +6,6 @@ description: using R1FS with the JavaScript SDK
 
 # R1FS Integration
 
-This page covers using R1FS with the JavaScript SDK.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

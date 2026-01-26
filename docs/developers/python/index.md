@@ -6,8 +6,6 @@ description: using the Python SDK for Ratio1
 
 # Python
 
-This page covers using the Python SDK for Ratio1.
-
 ## In this section
 - [Quick end-to-end example](./quick-end-to-end-example)
 - [Navigating the Tutorials](./navigating-the-tutorials)

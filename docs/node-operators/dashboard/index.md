@@ -6,8 +6,6 @@ description: intro to the dashboard
 
 # Getting Started with the main Dashboard
 
-This page covers intro to the dashboard.
-
 ## In this section
 - [Buying your first Ratio1 license](./buying-your-first-ratio1-license)
 - [Linking your Edge Node](./linking-your-edge-node)

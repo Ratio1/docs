@@ -6,8 +6,6 @@ description: migrating existing nodes configs
 
 # r1setup Migration Guide
 
-This page covers migrating existing nodes configs.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

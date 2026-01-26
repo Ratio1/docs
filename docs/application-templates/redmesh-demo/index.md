@@ -6,8 +6,6 @@ description: js/ts demo application for RedMesh
 
 # RedMesh Demo
 
-This page covers js/ts demo application for RedMesh.
-
 ## In this section
 - [How to Deeploy](./how-to-deeploy)
 - [How to Develop](./how-to-develop)

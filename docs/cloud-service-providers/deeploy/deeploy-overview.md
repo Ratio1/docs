@@ -6,8 +6,6 @@ description: overview presentation with no details
 
 # Deeploy Overview
 
-This page covers overview presentation with no details.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

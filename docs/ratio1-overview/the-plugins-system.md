@@ -6,8 +6,6 @@ description: how plugins work on Ratio1
 
 # The Plugins System
 
-This page covers how plugins work on Ratio1.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

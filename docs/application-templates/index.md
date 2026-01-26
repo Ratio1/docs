@@ -6,8 +6,6 @@ description: introduction to Ratio1 application templates
 
 # Application Templates
 
-This page covers introduction to Ratio1 application templates.
-
 ## In this section
 - [R1FS Demo](./r1fs-demo/)
 - [RedMesh Demo](./redmesh-demo/)

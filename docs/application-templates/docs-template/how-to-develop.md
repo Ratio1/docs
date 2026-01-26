@@ -6,8 +6,6 @@ description: technical details of Docs Template
 
 # How to Develop
 
-This page covers technical details of Docs Template.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

@@ -6,8 +6,6 @@ description: Open Sourced template-ready partner applications built on Ratio1
 
 # Partner Applications
 
-This page covers Open Sourced template-ready partner applications built on Ratio1.
-
 ## In this section
 - [CerviGuard](./cerviguard/)
 - [DataGen](./datagen/)

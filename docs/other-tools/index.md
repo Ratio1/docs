@@ -6,8 +6,6 @@ description: introduction to other Ratio1 tools
 
 # Other Tools
 
-This page covers introduction to other Ratio1 tools.
-
 ## In this section
 - [Telegram Bot](./telegram-bot)
 

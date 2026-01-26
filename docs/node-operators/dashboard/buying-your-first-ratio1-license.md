@@ -6,8 +6,6 @@ description: purchasing and activating a license
 
 # Buying your first Ratio1 license
 
-This page covers purchasing and activating a license.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

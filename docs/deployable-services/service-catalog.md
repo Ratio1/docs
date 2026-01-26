@@ -6,8 +6,6 @@ description: catalog of services that can be deployed on Ratio1
 
 # Service Catalog
 
-This page covers catalog of services that can be deployed on Ratio1.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

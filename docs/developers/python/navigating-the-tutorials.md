@@ -6,8 +6,6 @@ description: list of tutorials and explanations
 
 # Navigating the Tutorials
 
-This page covers list of tutorials and explanations.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

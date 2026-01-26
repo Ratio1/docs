@@ -6,8 +6,6 @@ description: connecting your license with your nodes
 
 # Linking your Edge Node
 
-This page covers connecting your license with your nodes.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

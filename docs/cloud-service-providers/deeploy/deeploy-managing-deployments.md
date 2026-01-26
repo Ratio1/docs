@@ -6,8 +6,6 @@ description: managing multiple deployments
 
 # Deeploy Managing Deployments
 
-This page covers managing multiple deployments.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

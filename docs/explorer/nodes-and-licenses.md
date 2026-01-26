@@ -6,8 +6,6 @@ description: how to use the Explorer to view nodes and licenses
 
 # Nodes and Licenses
 
-This page covers how to use the Explorer to view nodes and licenses.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

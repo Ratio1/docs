@@ -6,8 +6,6 @@ description: deployment details of RedMesh Demo
 
 # How to Deeploy
 
-This page covers deployment details of RedMesh Demo.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

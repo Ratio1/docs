@@ -6,8 +6,6 @@ description: steps to become a CSP on Ratio1
 
 # Becoming a CSP
 
-This page covers steps to become a CSP on Ratio1.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

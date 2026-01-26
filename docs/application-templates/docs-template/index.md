@@ -6,8 +6,6 @@ description: the documentation site you are currently reading
 
 # Docs Template
 
-This page covers the documentation site you are currently reading.
-
 ## In this section
 - [How to Deeploy](./how-to-deeploy)
 - [How to Develop](./how-to-develop)

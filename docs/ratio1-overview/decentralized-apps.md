@@ -6,8 +6,6 @@ description: Distributed app state memory CStore
 
 # Decentralized Apps
 
-This page covers Distributed app state memory CStore.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

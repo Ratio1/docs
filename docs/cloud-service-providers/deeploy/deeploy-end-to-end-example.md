@@ -6,8 +6,6 @@ description: complete example of a deployment
 
 # Deeploy End-to-End Example
 
-This page covers complete example of a deployment.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

@@ -6,8 +6,6 @@ description: introduction to CSP operation
 
 # For CSPs
 
-This page covers introduction to CSP operation.
-
 ## In this section
 - [Getting Started with Ratio1 for CSPs](./getting-started/)
 - [Deepploying with Deeploy](./deeploy/)

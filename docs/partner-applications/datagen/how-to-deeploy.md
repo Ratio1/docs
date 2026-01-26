@@ -6,8 +6,6 @@ description: deployment details of DataGen
 
 # How to Deeploy
 
-This page covers deployment details of DataGen.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

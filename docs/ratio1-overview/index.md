@@ -6,8 +6,6 @@ description: introduction to Ratio1
 
 # Ratio1 Overview
 
-This page covers introduction to Ratio1.
-
 ## In this section
 - [Decentralized Orchestration](./decentralized-orchestration)
 - [Distributed Storage](./distributed-storage)

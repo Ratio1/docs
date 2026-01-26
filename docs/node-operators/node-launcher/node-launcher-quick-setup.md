@@ -6,8 +6,6 @@ description: a end-to-end multi-node express configuration
 
 # Node Launcher Quick Setup
 
-This page covers a end-to-end multi-node express configuration.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

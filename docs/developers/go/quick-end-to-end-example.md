@@ -6,8 +6,6 @@ description: a complete example of using the Go SDK
 
 # Quick end-to-end example
 
-This page covers a complete example of using the Go SDK.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

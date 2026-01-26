@@ -6,8 +6,6 @@ description: decentralized synthetic data generation application
 
 # DataGen
 
-This page covers decentralized synthetic data generation application.
-
 ## In this section
 - [How to Deeploy](./how-to-deeploy)
 - [How to Develop](./how-to-develop)

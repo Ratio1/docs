@@ -6,8 +6,6 @@ description: understanding costs and revenue
 
 # Pricing and Business Model Intro
 
-This page covers understanding costs and revenue.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

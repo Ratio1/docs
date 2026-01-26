@@ -6,8 +6,6 @@ description: technical details of R1FS Demo
 
 # How to Develop
 
-This page covers technical details of R1FS Demo.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

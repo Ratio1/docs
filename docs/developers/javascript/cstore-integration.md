@@ -6,8 +6,6 @@ description: using CStore with the JavaScript SDK
 
 # CStore Integration
 
-This page covers using CStore with the JavaScript SDK.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

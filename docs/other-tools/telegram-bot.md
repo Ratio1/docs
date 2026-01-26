@@ -6,8 +6,6 @@ description: using the Ratio1 Telegram Bot
 
 # Telegram Bot
 
-This page covers using the Ratio1 Telegram Bot.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

@@ -6,8 +6,6 @@ description: how rewards work on Ratio1
 
 # Rewards Understanding and Claiming
 
-This page covers how rewards work on Ratio1.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.

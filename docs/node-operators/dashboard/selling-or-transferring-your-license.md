@@ -6,8 +6,6 @@ description: transferring ownership of your license
 
 # Selling or transferring your license
 
-This page covers transferring ownership of your license.
-
 ## What this covers
 - Core concepts and definitions for this topic.
 - Practical guidance and recommended next steps.
