@@ -16,7 +16,7 @@ Unlike fully permissionless networks, Ratio1 follows a **permissioned entry,
 trustless operation** model. Participation requires identity verification and
 license ownership, but once onboarded, all computation, orchestration, and
 rewards are enforced by cryptography, smart contracts, and distributed
-consensus—not by a central authority.
+consensus - not by a central authority.
 
 ---
 
@@ -24,8 +24,8 @@ consensus—not by a central authority.
 
 Ratio1 is not permissionless by design. Entry is gated through **email
 registration, KYC/KYB, and license ownership** to ensure accountability, data
-safety, and network integrity—while all ongoing operations remain trustless and
-decentralized.
+safety, and network integrity - while all ongoing operations remain trustless
+and decentralized.
 
 ---
 
@@ -47,7 +47,7 @@ regulatory exposure, data misuse, and incentive gaming.
 
 Ratio1 takes a different approach. All node operators and service participants
 are verified upfront and operate under an on-chain license (Node Deed). This
-creates a network of **known, accountable operators**—similar to licensed
+creates a network of **known, accountable operators** - similar to licensed
 providers rather than anonymous actors.
 
 Once verified, trust is no longer placed in individuals or a central company.
@@ -58,7 +58,7 @@ Instead:
 - Jobs, payments, and state transitions are enforced by smart contracts
 - No single entity can override execution or seize workloads
 
-In short: **identity is permissioned — execution is trustless**.
+In short: **identity is permissioned - execution is trustless**.
 
 ---
 
@@ -116,14 +116,8 @@ resilient, auditable, and legally viable than purely permissionless
 alternatives.
 
 Think of Ratio1 compute providers not as anonymous miners, but as **licensed
-operators in a decentralized infrastructure**—coordinated by protocol rules
+operators in a decentralized infrastructure** - coordinated by protocol rules
 instead of contracts, accounts, or centralized cloud providers.
-
----
-
-## Notable date
-
-- TBD (add a source link)
 
 ---
 

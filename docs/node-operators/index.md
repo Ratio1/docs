@@ -32,16 +32,16 @@ As a node operator, you:
 Node operators are not anonymous workers. Ratio1 nodes are licensed,
 identifiable, and accountable participants, enabling higher reliability,
 stronger guarantees, and optional enterprise-grade compliance - without
-sacrificing decentralization.
+sacrificing decentralization. Learn more about Ratio1’s permissioned yet
+trustless approach in the
+[Email registration & KYC/KYB](./node-operators/dashboard/email-registration-and-kyc-kyb)
+section of the docs or in our
+[Permissionless vs. Trustless article](https://ratio1.ai/blog/permissionless-vs-trustless).
 
 This section guides you through everything required to operate nodes
 effectively, from initial setup to day-to-day management.
 
 ## In this section
-
-- [Getting Started with the main Dashboard](./dashboard/)
-- [Managing Edge Nodes with r1setup](./r1setup/)
-- [Using Ratio1 Node Launcher](./node-launcher/)
 
 import DocCardList from '@theme/DocCardList';
 
