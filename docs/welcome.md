@@ -23,13 +23,15 @@ inference into a single protocol, abstracting away infrastructure complexity
 while preserving data sovereignty, auditability, and resilience. Developers can
 deploy containerized applications or AI microservices without managing servers,
 schedulers, or trust assumptions - while the protocol transparently handles
-coordination, verification, and incentives on-chain.
+coordination, verification, and incentives onchain.
 
 By extending cloud-native concepts such as container orchestration and
 serverless execution into a trustless environment, Ratio1 offers a disruptive
 alternative to traditional cloud platforms. It enables lower costs, edge-first
 availability, strong privacy guarantees, and new economic models for AI - where
 compute providers are rewarded directly for real availability and useful work.
+
+---
 
 ## What this covers
 
@@ -40,6 +42,8 @@ compute providers are rewarded directly for real availability and useful work.
 
 This documentation can be read end-to-end or used as a reference. Start with the
 fundamentals, then dive deeper as needed.
+
+---
 
 ## Notable date
 

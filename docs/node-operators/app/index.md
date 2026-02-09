@@ -1,7 +1,7 @@
 ---
-title: Getting Started with the main Dashboard
+title: Getting Started with the Node Operators App
 sidebar_position: 1
-description: intro to the dashboard
+description: Intro to the Node Operators App
 ---
 
 # Getting Started with the main Dashboard

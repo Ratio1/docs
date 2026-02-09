@@ -33,7 +33,7 @@ and decentralized.
 
 - Why Ratio1 requires email registration and KYC/KYB
 - The difference between _permissionless_ and _trustless_ systems
-- How Node Deeds act as on-chain licenses for verified participants
+- How Node Deeds act as onchain licenses for verified participants
 - How to complete email registration and KYC/KYB
 - What verification enables once you’re inside the protocol
 
@@ -46,7 +46,7 @@ openness, it introduces risks for decentralized AI workloads: unreliable nodes,
 regulatory exposure, data misuse, and incentive gaming.
 
 Ratio1 takes a different approach. All node operators and service participants
-are verified upfront and operate under an on-chain license (Node Deed). This
+are verified upfront and operate under an onchain license (Node Deed). This
 creates a network of **known, accountable operators** - similar to licensed
 providers rather than anonymous actors.
 
@@ -81,8 +81,9 @@ are mandatory for:
 
 ### Step 2: Register your email
 
-1. Navigate to **Profile & KYC**
+1. Navigate to **Profile & KYC** ![Step 1 connect your wallet](../img/1.jpg)
 2. Register an email address linked to your wallet
+   ![Step 2 register your email](../img/2.jpg)
 3. Confirm the email via the verification link sent to your inbox
 
 Your email is used for:
@@ -97,16 +98,16 @@ Your email is used for:
 
 1. Choose how you want to participate:
    - **Individual** → KYC
-   - **Company** → KYB
+   - **Company** → KYB ![Step 3 select KYC or KYB](../img/3.jpg)
+     ![Step 4 start KYC or KYB](../img/4.jpg)
 2. Complete the verification form (powered by Sumsub)
+   ![Step 5 complete KYC or KYB](../img/5.jpg)
 3. Submit the required information and documents
 
 If the information is correct, approval is typically fast. If anything needs
 correction, you’ll be notified by email.
 
-Once approved, your wallet is fully enabled for Mainnet participation.
-
----
+**Once approved, your wallet is fully enabled for Mainnet participation.**
 
 ## Why this matters
 
