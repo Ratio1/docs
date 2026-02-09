@@ -34,7 +34,7 @@ identifiable, and accountable participants, enabling higher reliability,
 stronger guarantees, and optional enterprise-grade compliance - without
 sacrificing decentralization. Learn more about Ratio1’s permissioned yet
 trustless approach in the
-[Email registration & KYC/KYB](./dashboard/email-registration-and-kyc-kyb)
+[Email registration & KYC/KYB](./app/email-registration-and-kyc-kyb)
 section of the docs or in our
 [Permissionless vs. Trustless article](https://ratio1.ai/blog/permissionless-vs-trustless).
 
