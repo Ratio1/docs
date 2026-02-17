@@ -1,61 +1,56 @@
 ---
 title: The Plugins System
 sidebar_position: 4
-description: how plugins work on Ratio1
+description: Plugin runtime contracts and extension surfaces
 ---
 
 # The Plugins System
 
-Plugins are the execution units of Ratio1 workloads.
-Every workload is ultimately a set of plugin instances attached to a pipeline on one or more nodes.
+Plugins are the execution substrate of Ratio1 workloads. Deeploy deployments, ChainDist jobs, and
+direct workload paths all resolve to plugin runtime behavior on edge nodes.
 
-## Core concepts
+## Where plugins fit in the stack
 
-- **Plugin signature**: identifies plugin type/capability (for example custom execution, web API, container runners, network monitors).
-- **Plugin instance**: a concrete configured runtime of a signature inside a pipeline.
-- **Pipeline**: groups plugin instances and defines execution context on a target node.
-- **Session callbacks**: consume payloads, notifications, and heartbeats from plugin execution.
+1. Orchestration defines deployment intent and policy.
+2. Pipelines bind execution context to target nodes.
+3. Plugin signatures select capability families.
+4. Plugin instances execute configuration and emit payloads, notifications, and heartbeats.
 
-## How plugins are deployed
+## Runtime extension surfaces
 
-1. Create a pipeline on a node.
-2. Attach one or more plugin instances by signature.
-3. Provide instance configuration (typically normalized as uppercase keys in SDK flows).
-4. Deploy and monitor runtime signals.
+In the edge runtime, plugin capabilities are organized through extension surfaces such as:
 
-This model applies to both simple single-plugin pipelines and complex multi-plugin app stacks.
-
-## Plugin families in practice
-
-- **Custom code plugins** for rapid workload logic injection.
-- **Serving/API plugins** for request-response and inference-like workflows.
-- **Container app plugins** (`CONTAINER_APP_RUNNER`, `WORKER_APP_RUNNER`) for app-style containerized deployments.
-- **Network/admin plugins** for monitoring and control-plane functions.
-
-## Repository extension surfaces
-
-In the Edge Node codebase, plugin behavior is extended through:
-
-- `extensions/business/`
+- `extensions/business/` (for example `deeploy`, `container_apps`, `chain_dist`, `cstore`, `r1fs`, `dauth`, `oracle_sync`, `jeeves`)
 - `extensions/data/`
 - `extensions/serving/`
-- `plugins/` (tutorial/sample plugin implementations)
 
-This structure keeps runtime contracts stable while allowing domain-specific capabilities to evolve.
+`naeural_core` provides backbone modules and runtime contracts, while `edge_node` operationalizes
+and extends those capabilities for network runtime behavior.
 
-## Design guidance
+## Why this matters for production
 
-- Keep plugin responsibilities narrow and composable.
-- Prefer explicit instance IDs and clean config boundaries.
-- Use CStore for coordination and R1FS for durable shared artifacts.
-- Route high-level deployment logic through Deeploy when app lifecycle management is required.
+This architecture allows multiple product experiences to share one execution substrate:
+
+- managed deployments through Deeploy;
+- distributed compute patterns through ChainDist;
+- app runners (CAR/WAR) over consistent runtime contracts;
+- evolving data/auth/service modules without replacing the full platform runtime.
+
+## SDK relation
+
+SDKs configure and interact with pluginized workloads, but plugins are runtime-level architecture first.
+In production framing, SDK entities are interfaces to the system, not the system itself.
 
 ## Ground truth references
 
+Primary:
 - https://github.com/Ratio1/edge_node
-- https://github.com/Ratio1/ratio1_sdk
-- https://ratio1.ai/blog
+- https://github.com/ratio1/naeural_core
+
+Supporting:
 - https://ratio1.ai/whitepaper
+- https://ratio1.ai/blog/ratio1-redmesh-decentralized-distributed-cybersecurity
+- https://ratio1.ai/blog/paradigm-shift-how-ratio1-j33ves-is-revolutionizing-code-intelligence
 
 ## Notable date
 

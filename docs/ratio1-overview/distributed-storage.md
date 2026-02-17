@@ -1,53 +1,82 @@
 ---
 title: Distributed Storage
 sidebar_position: 2
-description: R1FS storage review
+description: R1FS and CStore as production data layers
 ---
 
 # Distributed Storage
 
-Ratio1 distributed storage is centered on **R1FS**, the ecosystem's IPFS-backed storage layer for
-file/object exchange across nodes and clients.
+Ratio1 storage is a two-layer production model: **R1FS** for durable distributed artifacts and
+**ChainStore (CSTORE), often referenced in SDK/docs as CStore**, for live coordination state.
 
-## What R1FS is for
+## Why this split exists
 
-R1FS is best suited for:
+Production services usually need both:
 
-- files and blobs that must be shared across nodes or sessions,
-- artifacts that should outlive in-memory plugin execution,
-- payload-adjacent content that is too heavy for inline transport.
+- persistent artifact exchange across nodes and sessions;
+- fast state signaling during execution.
 
-In SDK internals, R1FS is implemented through an IPFS relay integration (`R1FSEngine`) and is exposed
-as upload/download utilities used by client and node workflows.
+Using one layer for both concerns often introduces either latency or durability problems.
 
-## R1FS vs CStore (quick decision rule)
+## R1FS: durable artifact plane
 
-- Use **R1FS** for durable, file-oriented, distributed storage.
-- Use **CStore/ChainStorage** for lightweight in-memory coordination and shared state exchange between workers/plugins.
+Use **R1FS** for:
 
-In real workloads, both are often combined:
+- models, datasets, generated outputs, and larger payload artifacts;
+- content that must be fetched later or by other nodes;
+- storage flows that should stay decoupled from real-time runtime messaging.
 
-- CStore coordinates state and peer signaling,
-- R1FS carries heavier artifacts and shared files.
+R1FS is content-addressed and designed for distributed retrieval behavior.
 
-## Typical R1FS workflow
+## ChainStore (CSTORE/CStore): live coordination plane
 
-1. Node/client is configured for relay connectivity.
-2. File/object is uploaded and represented by a content-addressed identifier.
-3. Peers/plugins consume the identifier and fetch content when needed.
-4. Workload logic emits status/results while file exchange remains decoupled.
+Use **ChainStore/CStore** for:
 
-## Operational notes
+- worker progress and synchronization markers;
+- short-lived shared keys/state;
+- coordination signals between distributed components.
 
-- IPFS relay readiness can take time after startup; early reads may fail if queried too soon.
-- Keep large/binary payloads in R1FS instead of pushing them as inline message fields.
-- Treat R1FS as a shared storage substrate, not a replacement for per-plugin runtime state.
+ChainStore/CStore is not a replacement for durable artifact storage.
+
+## Production pattern: CStore + R1FS together
+
+1. Components coordinate state through ChainStore/CStore.
+2. Durable or heavy artifacts are stored and retrieved through R1FS.
+3. Services expose status/results while keeping data movement and runtime signaling separated.
+
+This pattern also supports sovereignty-oriented deployments where data locality and infrastructure control are important.
+
+## Security and tenancy semantics
+
+- **Content-addressed integrity**: R1FS objects are retrieved by content identity, so tampering changes
+  the addressable result.
+- **Encrypted/private control**: privacy-sensitive application data can be managed with encryption and
+  owner-controlled key boundaries.
+- **Namespace and authorization boundaries**: coordination state and artifact access can be scoped with
+  namespace-style separation and explicit authorization policy.
+
+## Production evidence: 3send
+
+The `3send` launch is a practical ecosystem example of this split: live workflow coordination with
+ChainStore/CStore-style state plus durable file movement across distributed storage paths.
+
+## SDK position
+
+SDKs (Python/TS/Go) expose interfaces to both layers for integration work. The storage architecture itself
+is defined by protocol/runtime design, not by one client library.
 
 ## Ground truth references
 
-- https://github.com/Ratio1/ratio1_sdk
-- https://github.com/Ratio1/edge_node
+Primary:
 - https://ratio1.ai/whitepaper
+
+Supporting:
+- https://github.com/Ratio1/edge_node
+- https://ratio1.ai/blog/ratio1-sdk-for-typescript-your-bridge-to-edge-nodes
+- https://ratio1.ai/blog/go-developers-meet-the-new-ratio1-sdk-and-sandbox
+- https://ratio1.ai/blog/empowering-the-nodejs-ecosystem
+- https://ratio1.ai/blog/ratio1-sovereign-ai-keeping-your-models-and-data-on-prem-in-the-age-of-memorization
+- https://ratio1.ai/blog/shipping-the-future-why-today-s-3send-launch-shows-what-the-ratio1-protocol-was-built-for
 
 ## Notable date
 

@@ -1,83 +1,78 @@
 ---
 title: Decentralized Orchestration
 sidebar_position: 1
-description: Orchestration review including Deeploy ChainDist CAR/WAR
+description: Deeploy-first orchestration across licensed edge infrastructure
 ---
 
 # Decentralized Orchestration
 
-Ratio1 orchestration is the way workloads are scheduled, coordinated, and evolved across distributed nodes.
-In practice, Ratio1 supports three complementary orchestration paths:
+Ratio1 orchestration controls where and how workloads run across licensed edge infrastructure,
+including rollout policy, resource intent, and settlement-aware execution.
 
-- direct SDK-driven pipeline orchestration,
-- ChainDist cooperative execution,
-- Deeploy-managed app-style deployment.
+## Production-first orchestration model
 
-## 1) Direct SDK orchestration
+For production services, the primary path is **Deeploy** on licensed node capacity.
 
-This is the most explicit, code-first model:
+1. Define deployment intent (service type, runtime model, resources, policies).
+2. Select eligible node capacity through orchestration workflows.
+3. Launch and monitor execution through deployment/app surfaces.
+4. Operate updates and scaling through the same lifecycle channel.
+5. Follow oracle-verified, escrow-based economics for funded execution and settlement.
 
-1. Connect with a `Session`.
-2. Select a target node.
-3. Create a `Pipeline`.
-4. Add one or more plugin instances.
-5. Deploy and observe payloads/notifications.
+This reduces direct node-by-node operational burden for teams running real services.
 
-Use this model when you need full control over execution flow and plugin-level behavior.
+## Oracle verification and settlement path
 
-## 2) ChainDist cooperative orchestration
+Production jobs are funded through escrow and observed through oracle/runtime telemetry signals.
+Settlement is conditional: when uptime/execution conditions are met for the relevant windows,
+rewards can be released to participating roles and nodes.
 
-ChainDist is Ratio1's distributed job pattern for splitting work across multiple remote workers and
-aggregating results through a main coordinator path.
+When conditions fail, orchestration can reallocate workloads, while trust/economic controls can
+apply withholding, penalty, or burn-linked outcomes depending on policy.
 
-Typical pattern in `ratio1_sdk`:
+## CAR and WAR execution paths
 
-- define worker code,
-- define main-node aggregation and finish-condition logic,
-- set `nr_remote_worker_nodes`,
-- deploy through `create_chain_dist_custom_job(...)` or equivalent pipeline APIs.
+Deeploy commonly exposes two app delivery patterns:
 
-Common use cases:
+- **CAR (Container App Runner)**: container-image oriented deployment.
+- **WAR (Worker App Runner)**: Git-to-edge worker app flow with build/run lifecycle management.
 
-- parallel search/compute jobs,
-- cooperative data processing over multiple nodes,
-- aggregation workflows that return partial and final outputs.
+Both rely on the same decentralized plugin-based runtime, while differing in packaging and delivery workflow.
 
-## 3) Deeploy orchestration
+## ChainDist and direct SDK orchestration
 
-Deeploy is the app deployment path for packaging workload intent (target nodes, plugin signature, resources,
-policy) and letting the deployment service coordinate rollout.
+Ratio1 also exposes orchestration modes outside app-style deployment:
 
-In SDK and Edge Node internals, Deeploy flows include:
+- **ChainDist** for cooperative distributed jobs (fan-out workers + aggregation logic).
+- **Direct SDK orchestration** for advanced control, prototyping, or narrow custom integrations.
 
-- plugin-signature driven launch contracts,
-- target/spare node selection,
-- container resource constraints,
-- job/application metadata and status tracking.
+Direct SDK control remains important, but it is an interface-level option rather than the default production posture.
 
-## CAR/WAR in the orchestration model
+## Role split in orchestration
 
-Within current code-level terminology:
+- **Node Operator**: provides licensed compute capacity and node uptime.
+- **CSP**: manages service deployment and lifecycle via Deeploy workflows.
+- **Developer**: builds workload logic and integrations against runtime/data interfaces.
 
-- **CAR** aligns with `CONTAINER_APP_RUNNER` style execution (container lifecycle + tunnel exposure + runtime policies).
-- **WAR** aligns with `WORKER_APP_RUNNER` style execution (repo-aware worker web app behavior, build/run commands, VCS polling).
-
-Both are orchestrated as plugin-driven deployments and can be managed via SDK or Deeploy flows, depending on
-the use case.
-
-## How to choose
-
-- Use **direct SDK orchestration** for precise control and fast iteration.
-- Use **ChainDist** for coordinated multi-worker compute.
-- Use **Deeploy (CAR/WAR paths)** for app-like deployments with deployment metadata and resource-based rollout.
+CSP production onboarding includes oracle-aligned deed/license requirements plus KYC/KYB checks.
+Trust protocol governance provides freeze/suspend/blacklist enforcement paths for serious violations.
 
 ## Ground truth references
 
-- https://github.com/Ratio1/ratio1_sdk
+Primary:
+- https://ratio1.ai/blog/deeploy-unlocked-accessing-the-power-of-ratio1
+- https://ratio1.ai/blog/ratio1-deeploy-blog-1-decentralized-managed-container-orchestration
+- https://ratio1.ai/blog/introducing-the-worker-app-runner-deploy-from-git-to-edge
+- https://ratio1.ai/blog/deploy-your-app-with-ratio1-s-worker-app-runner-no-ci-cd-required
+- https://ratio1.ai/whitepaper
+
+Supporting:
 - https://github.com/Ratio1/edge_node
 - https://deeploy.ratio1.ai/
 - https://app.ratio1.ai/
 - https://explorer.ratio1.ai/
+- https://ratio1.ai/blog/the-csp-business-blueprint
+- https://ratio1.ai/blog/the-trust-protocol-inside-ratio1-s-node-governance-and-blacklisting-system
 
 ## Notable date
 

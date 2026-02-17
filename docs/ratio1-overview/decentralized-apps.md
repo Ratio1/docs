@@ -1,52 +1,76 @@
 ---
 title: Decentralized Apps
 sidebar_position: 3
-description: Distributed app state memory CStore
+description: Production service patterns on Ratio1
 ---
 
 # Decentralized Apps
 
-In Ratio1, a decentralized app is typically composed from pipelines and plugin instances running across
-multiple nodes, with shared state and event exchange handled by decentralized coordination primitives.
+On Ratio1, decentralized apps are production services running on licensed edge infrastructure with
+decentralized orchestration, explicit operational roles, and protocol-governed economics.
 
-## The role of CStore / ChainStorage
+## Production app shape on Ratio1
 
-**CStore (ChainStorage)** is the shared in-memory coordination layer used by plugins/workers to exchange
-state and synchronization signals without forcing every interaction through heavyweight storage.
+A typical deployment combines:
 
-Typical usage patterns include:
+- Deeploy lifecycle control for rollout and operations;
+- plugin-based execution on edge nodes;
+- CStore for live coordination and R1FS for durable artifacts;
+- visibility through `app.ratio1.ai` and `explorer.ratio1.ai`.
 
-- worker-to-worker coordination,
-- partial-result sharing during distributed jobs,
-- coordination signals consumed by main aggregator plugins.
+## Service lifecycle
 
-## dApp execution pattern on Ratio1
+1. Define service behavior and packaging (for example CAR or WAR paths).
+2. Deploy on eligible licensed node capacity.
+3. Operate and scale workers while tracking health and outputs.
+4. Settle funded execution through oracle-verified protocol economic flows.
 
-1. A client deploys pipeline logic (single node or distributed).
-2. Plugin instances process data and exchange intermediate state.
-3. Shared state keys/peers coordinate distributed progress.
-4. Final outputs are emitted as payloads or persisted via R1FS when durability is needed.
+## Real-world motifs in the ecosystem
 
-## Practical design split: CStore + R1FS
+Ratio1 application narratives emphasize production outcomes:
 
-- Keep **rapid coordination state** in CStore.
-- Move **persistent or large artifacts** to R1FS.
+- **RedMesh**: decentralized cybersecurity workloads.
+- **J33VES and Keysoft flows**: assistant-style services with user-owned encrypted storage patterns.
+- **Sovereign AI**: model/data control under owned or controlled infrastructure boundaries.
+- **3send**: production file-transfer delivery motif built on distributed orchestration and storage primitives.
 
-This split keeps decentralized apps responsive while still enabling artifact persistence and cross-session reuse.
+Recent RedMesh positioning also frames these deployments as often complementary to existing security
+toolchains during near-term adoption, not only strict replacement paths.
 
-## Product surfaces around decentralized apps
+## Role-aware operation
 
-- `app.ratio1.ai`: Node Operator fleet management.
-- `deeploy.ratio1.ai`: CSP workflows, deployments, and cloud resource management.
-- `explorer.ratio1.ai`: network-level visibility (nodes, versions, licenses, activity snapshots).
+- **Node Operators** provide capacity and uptime.
+- **CSPs** manage deployment and service lifecycle.
+- **Developers** implement business logic and integrations.
+
+This operating split is central to how decentralized apps are delivered in practice.
+Trust protocol governance adds freeze/suspend/blacklist enforcement paths for violating actors, with
+licensed and KYC/KYB-backed roles supporting accountable operations.
+
+## SDK and tutorial content
+
+SDK tutorials are important for learning and low-level integration, but they are not the default
+production operating playbook. Pre-2.5 tutorials should be treated as historical implementation guidance.
 
 ## Ground truth references
 
-- https://github.com/Ratio1/ratio1_sdk
-- https://github.com/Ratio1/edge_node
+Primary:
+- https://ratio1.ai/blog/ratio1-redmesh-decentralized-distributed-cybersecurity
+- https://ratio1.ai/blog/ratio1-redmesh-from-annual-checkups-to-continuous-cyber-immunity
+- https://ratio1.ai/blog/redmesh-market-analysis-and-positioning-vs-competitors
+- https://ratio1.ai/blog/ratio1-sovereign-ai-keeping-your-models-and-data-on-prem-in-the-age-of-memorization
+- https://ratio1.ai/blog/j33ves-keysoft-ratio1-three-assistants-that-turn-intent-into-results
+- https://ratio1.ai/blog/migrating-build21-from-aws-to-ratio1
+- https://ratio1.ai/blog/shipping-the-future-why-today-s-3send-launch-shows-what-the-ratio1-protocol-was-built-for
+
+Supporting:
 - https://deeploy.ratio1.ai/
 - https://app.ratio1.ai/
 - https://explorer.ratio1.ai/
+- https://ratio1.ai/blog/the-trust-protocol-inside-ratio1-s-node-governance-and-blacklisting-system
+- https://ratio1.ai/blog/ratio1-end-to-end-tutorial
+- https://ratio1.ai/blog/deploying-a-custom-web-application
+- https://ratio1.ai/blog/build-your-own-sandbox-in-minutes
 
 ## Notable date
 

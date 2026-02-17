@@ -70,13 +70,50 @@ For each assigned task (example: `2.4. The Plugins system`), follow this sequenc
 
 ### Core Ground Truth Sources
 
-- https://github.com/Ratio1/edge_node
-- https://github.com/Ratio1/ratio1_sdk
+For overall system behavior and purpose:
+- https://ratio1.ai/blog/what-is-ratio1-and-why-it-matters
 - https://ratio1.ai/whitepaper
-- https://ratio1.ai/blog
 - https://explorer.ratio1.ai/
 - https://app.ratio1.ai/
 - https://deeploy.ratio1.ai/
+
+For Cloud deployment and orchestration overview:
+- https://ratio1.ai/blog/deeploy-unlocked-accessing-the-power-of-ratio1
+- https://ratio1.ai/blog/ratio1-deeploy-blog-1-decentralized-managed-container-orchestration
+- https://ratio1.ai/blog/migrating-build21-from-aws-to-ratio1
+- https://ratio1.ai/blog/deploy-your-app-with-ratio1-s-worker-app-runner-no-ci-cd-required
+- https://ratio1.ai/blog/introducing-the-worker-app-runner-deploy-from-git-to-edge
+
+For ecosystem business model, trust/governance, and competitive positioning:
+- https://ratio1.ai/blog/the-csp-business-blueprint
+- https://ratio1.ai/blog/redmesh-market-analysis-and-positioning-vs-competitors
+- https://ratio1.ai/blog/the-trust-protocol-inside-ratio1-s-node-governance-and-blacklisting-system
+
+For existing application templates and frameworks:
+- https://ratio1.ai/blog/ratio1-redmesh-decentralized-distributed-cybersecurity
+- https://ratio1.ai/blog/ratio1-redmesh-from-annual-checkups-to-continuous-cyber-immunity
+- https://ratio1.ai/blog/ratio1-sovereign-ai-keeping-your-models-and-data-on-prem-in-the-age-of-memorization
+- https://ratio1.ai/blog/paradigm-shift-how-ratio1-j33ves-is-revolutionizing-code-intelligence
+- https://ratio1.ai/blog/shipping-the-future-why-today-s-3send-launch-shows-what-the-ratio1-protocol-was-built-for
+
+For production application development:
+- https://ratio1.ai/blog/ratio1-sdk-for-typescript-your-bridge-to-edge-nodes
+- https://ratio1.ai/blog/go-developers-meet-the-new-ratio1-sdk-and-sandbox
+- https://ratio1.ai/blog/j33ves-keysoft-ratio1-three-assistants-that-turn-intent-into-results
+- https://ratio1.ai/blog/empowering-the-nodejs-ecosystem
+
+For low-level information and SDK-oriented development (not production-grade apps):
+- https://ratio1.ai/blog/deep-dive-into-the-ratio1-community-telegram-bot-network-insights-for-everyone
+- https://ratio1.ai/blog/ratio1-end-to-end-tutorial
+- https://ratio1.ai/blog/introducing-dauth-simplified-decentralized-authentication-in-ratio1
+- https://ratio1.ai/blog/distributed-prime-number-calculation
+- https://ratio1.ai/blog/deploying-a-custom-web-application
+- https://ratio1.ai/blog/build-your-own-sandbox-in-minutes
+- https://github.com/Ratio1/ratio1_sdk
+
+For the main Edge Node repositories and behavior:
+- https://github.com/Ratio1/edge_node
+- https://github.com/ratio1/naeural_core
 
 ### Local Canonical Sources
 
