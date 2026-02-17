@@ -25,7 +25,8 @@ r1ctl --help
 ## Primary command families
 
 - `get ...`
-  - read-only views (nodes, supervisors, availability, apps, networks, address lookups).
+  - read-only views (nodes, supervisors, comm relay summary, address lookups, availability, apps, networks).
+  - includes subcommands such as `get comms` and `get eth <node_addr>`.
 - `config ...`
   - local client config operations (show/reset/address/network/alias).
 - `inspect`
@@ -33,7 +34,7 @@ r1ctl --help
 - `restart`, `shutdown`
   - node control commands (authorization dependent).
 - `oracle-rollout`
-  - staged rollout helper across seed/oracle/worker node groups.
+  - staged rollout helper across seed/oracle/worker node groups (`--skip-seeds`, `--skip-oracles`, `--skip-workers`, `--timeout`).
 - `update`
   - update local SDK package.
 

@@ -23,6 +23,9 @@ discover nodes, create pipelines, deploy plugin instances, and consume payloads 
 - You want callback-driven integration (`on_data`, `on_notification`, `on_heartbeat`).
 - You need chain-distributed compute patterns or custom web endpoints from code.
 
+For managed production lifecycle operations, default to Deeploy UI/API; treat direct SDK orchestration
+as development, integration, and advanced control surfaces.
+
 ## In this section
 - [Quick end-to-end example](./quick-end-to-end-example)
 - [Navigating the Tutorials](./navigating-the-tutorials)

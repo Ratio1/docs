@@ -55,6 +55,9 @@ python3 -m unittest discover -s plugins -p "*test*.py"
 python3 -m unittest extensions.business.cybersec.red_mesh.test_redmesh
 ```
 
+Always verify test targets against the current branch/release CI expectations before treating any
+single command set as canonical.
+
 ## Contribution quality checklist
 
 - API names/signatures used in docs match current package version.

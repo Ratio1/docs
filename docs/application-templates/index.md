@@ -19,8 +19,8 @@ In this chapter, templates are organized as practical starting points with separ
 
 1. Pick the closest template to your target use case.
 2. Follow `How to Develop` to adapt code, configuration, and integration points.
-3. Follow `How to Deeploy` to move from local changes to managed deployment.
-4. Verify operational posture in `app.ratio1.ai` and `explorer.ratio1.ai`.
+3. Follow `How to Deeploy` to move from local changes to managed deployment (UI in `deeploy.ratio1.ai` or Deeploy API integration).
+4. Verify deployment operations in `deeploy.ratio1.ai`, runtime posture in `explorer.ratio1.ai`, and account/license context in `app.ratio1.ai`.
 
 ## Scope boundary
 

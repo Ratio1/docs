@@ -28,11 +28,12 @@ loads plugin instances, and executes workload logic.
 ## Extension surfaces and plugin outcomes
 
 Edge runtime behavior is extended through plugin/extension families in the edge-node codebase.
-Exact module composition can shift across releases, but the stable model is:
+Exact module composition can shift across releases. In the current tree, the main extension groups are:
 
-- business/runtime workload plugins,
-- data/listener integrations,
-- default/core extension modules.
+- `extensions/business/` for runtime workload modules,
+- `extensions/data/` for data/listener integrations,
+- `extensions/serving/` for serving/inference surfaces,
+- `extensions/utils/` for shared utility components.
 
 For Chapter 2 architectural context, see:
 - [Ratio1 Overview](../../ratio1-overview/)

@@ -57,8 +57,8 @@ This pattern also supports sovereignty-oriented deployments where data locality 
 
 ## Production evidence: 3send
 
-The `3send` launch is a practical ecosystem example of this split: live workflow coordination with
-ChainStore/CStore-style state plus durable file movement across distributed storage paths.
+The `3send` launch article documents this split explicitly: metadata/control flow in CStore and
+encrypted file payloads in R1FS. This is a concrete production example of the CStore + R1FS pattern.
 
 ## SDK position
 

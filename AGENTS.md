@@ -92,18 +92,24 @@ For ecosystem business model, trust/governance, and competitive positioning:
 - https://ratio1.ai/blog/who-will-be-looking-for-us-the-ratio1-ideal-customer-profile-and-more-v0-3
 - https://ratio1.ai/blog/from-zero-to-node-runner-mainnet
 
-For existing application templates and frameworks:
+For existing application templates and frameworks (articles):
 - https://ratio1.ai/blog/ratio1-redmesh-decentralized-distributed-cybersecurity
 - https://ratio1.ai/blog/ratio1-redmesh-from-annual-checkups-to-continuous-cyber-immunity
 - https://ratio1.ai/blog/ratio1-sovereign-ai-keeping-your-models-and-data-on-prem-in-the-age-of-memorization
 - https://ratio1.ai/blog/paradigm-shift-how-ratio1-j33ves-is-revolutionizing-code-intelligence
 - https://ratio1.ai/blog/shipping-the-future-why-today-s-3send-launch-shows-what-the-ratio1-protocol-was-built-for
-
-For production application development:
 - https://ratio1.ai/blog/ratio1-sdk-for-typescript-your-bridge-to-edge-nodes
 - https://ratio1.ai/blog/go-developers-meet-the-new-ratio1-sdk-and-sandbox
 - https://ratio1.ai/blog/j33ves-keysoft-ratio1-three-assistants-that-turn-intent-into-results
 - https://ratio1.ai/blog/empowering-the-nodejs-ecosystem
+
+For existing application templates and frameworks (repositories):
+- https://github.com/Ratio1/RedMesh-Navigator
+- https://github.com/Ratio1/r1fs-demo
+
+3rd-party production grade apps developed on Ratio1:
+- https://github.com/SmartCloverAI/CerviGuard
+- https://github.com/Archicava/ASPIRE
 
 For low-level information and SDK-oriented development (not production-grade apps):
 - https://ratio1.ai/blog/deep-dive-into-the-ratio1-community-telegram-bot-network-insights-for-everyone

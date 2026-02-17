@@ -11,11 +11,14 @@ including rollout policy, resource intent, and settlement-aware execution.
 
 ## Production-first orchestration model
 
-For production services, the primary path is **Deeploy** on licensed node capacity.
+For production services, the primary path is **Deeploy** on licensed node capacity, through:
+
+- **Deeploy App** (`deeploy.ratio1.ai`) for managed UI operations.
+- **Deeploy API** for programmatic production orchestration.
 
 1. Define deployment intent (service type, runtime model, resources, policies).
 2. Select eligible node capacity through orchestration workflows.
-3. Launch and monitor execution through deployment/app surfaces.
+3. Launch and monitor execution through Deeploy UI/API surfaces.
 4. Operate updates and scaling through the same lifecycle channel.
 5. Follow oracle-verified, escrow-based economics for funded execution and settlement.
 
@@ -41,12 +44,12 @@ Both rely on the same decentralized plugin-based runtime, while differing in pac
 
 ## ChainDist and direct SDK orchestration
 
-Ratio1 also exposes orchestration modes outside app-style deployment:
+Ratio1 also exposes lower-level orchestration modes outside managed app-style deployment:
 
 - **ChainDist** for cooperative distributed jobs (fan-out workers + aggregation logic).
-- **Direct SDK orchestration** for advanced control, prototyping, or narrow custom integrations.
+- **Direct SDK orchestration** for advanced control, prototyping, integration workflows, and custom runtime handling.
 
-Direct SDK control remains important, but it is an interface-level option rather than the default production posture.
+Direct SDK and ChainDist control remain important, but they are interface-level options rather than the default managed production posture.
 
 ## Role split in orchestration
 

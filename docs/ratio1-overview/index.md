@@ -19,7 +19,7 @@ execution, and protocol-level economic settlement for AI and application workloa
 
 Ratio1 participation is license-gated and role-specific:
 
-- **Node Operators** run licensed node capacity and receive network rewards (for example PoA and PoAI flows).
+- **Node Operators** run licensed node capacity and receive network rewards (for example Proof of Availability (PoA) and Proof of AI (PoAI) flows).
 - **CSPs** package and operate deployments through Deeploy lifecycle workflows.
 - **Developers** build business logic and integrations through SDK/API interfaces.
 
@@ -40,7 +40,8 @@ For managed production delivery, CSP participation typically includes:
 
 ## Production path vs development path
 
-- **Recommended managed production path**: Deeploy-centered orchestration on licensed nodes, with operations in `app.ratio1.ai` and telemetry in `explorer.ratio1.ai`.
+- **Recommended managed production path**: Deeploy-centered orchestration on licensed nodes, using `deeploy.ratio1.ai` (and Deeploy API) for deployment operations, and `explorer.ratio1.ai` for telemetry.
+- **Node/license account operations**: `app.ratio1.ai` for KYC/KYB, license lifecycle, node linking, and reward-claiming flows.
 - **Development/integration path**: SDK-driven control for prototyping, custom integration, and advanced workflow logic.
 - **Distributed compute path**: ChainDist for fan-out worker execution with aggregation behavior.
 

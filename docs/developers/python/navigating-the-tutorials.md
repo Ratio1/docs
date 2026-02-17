@@ -6,8 +6,8 @@ description: list of tutorials and explanations
 
 # Navigating the Tutorials
 
-The SDK ships with a large `tutorials/` set. Use this page as a route map by objective, not as
-an equal-priority list.
+The `ratio1_sdk` repository contains a large `tutorials/` set. Use this page as a route map by
+objective, not as an equal-priority list.
 
 ## Recommended progression
 
@@ -32,9 +32,14 @@ an equal-priority list.
    - `ex19_deeploy_container_example.py`
    - `ex20_deeploy_telegram_bot.py`
    - `ex22_deeploy_custom_code.py`
+   - `ex23_deploy_worker_app.py`
 6. **Bots and operational examples**:
    - `ex10`, `ex11`, `ex12` (telegram bot patterns)
    - `ex21_telegram_community_bot.py`
+7. **Newer specialized examples**:
+   - `ex24_multi_video_stream_monitor.py`
+   - `ex25_local_serving_api.py`
+   - `ex26_cerviguard_war_loopback.py`
 
 ## Tutorial groups and intent
 
@@ -43,17 +48,21 @@ an equal-priority list.
 - **Integration/app patterns**:
   - `ex08`, `ex09`, `ex13`, `ex16`, `ex17`, `ex18`
 - **Deeploy/operations patterns**:
-  - `ex19`, `ex20`, `ex22`
+  - `ex19`, `ex20`, `ex22`, `ex23`
 - **Specialized demos**:
   - `ex14_wallets.py`
   - `ex15_telegram_rogue_style_game.py`
+  - `ex24`, `ex25`, `ex26`
+  - `8. custom_code_fastapi_assets/*`, `9. code_sandbox_from_scratch_assets/*`, `26_cerviguard_war_loopback/*`
   - `eth2025/*`
+  - `video_presentation/*`
 
 ## Reading guidance
 
 - Start from examples that match your immediate use case; do not run all tutorials linearly.
 - For production work, prioritize patterns that align with current managed deployment surfaces.
 - Treat older tutorial flows as implementation references and adapt to current runtime/package behavior.
+- Repository tutorials are source assets and are not guaranteed to be installed in your local wheel/site-package.
 
 ## Ground truth references
 

@@ -7,6 +7,7 @@ description: a complete example of using the Python SDK
 # Quick end-to-end example
 
 This walkthrough gets you from local setup to a deployed remote custom execution pipeline.
+It is a low-level SDK quickstart pattern, not the preferred managed production deployment path.
 
 ## Prerequisites
 
@@ -25,6 +26,9 @@ If you run a local test node, inspect and allowlist your SDK client:
 docker exec r1node get_node_info
 docker exec r1node add_allowed <your_sdk_client_address> <optional_alias>
 ```
+
+For managed CSP deployments through Deeploy, allowlisting and access policies are handled by that
+operational control plane rather than ad-hoc local node commands.
 
 ## Minimal end-to-end script
 

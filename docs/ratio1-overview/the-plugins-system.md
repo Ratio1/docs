@@ -21,10 +21,11 @@ direct workload paths all resolve to plugin runtime behavior on edge nodes.
 In the current edge runtime, plugin capabilities are organized through extension surfaces such as:
 
 - `extensions/business/` (for example `deeploy`, `container_apps`, `chain_dist`, `cstore`, `dauth`, `oracle_sync`, `jeeves`)
-- `extensions/default/`
 - `extensions/data/`
+- `extensions/serving/`
+- `extensions/utils/`
 
-Exact module sets can evolve between releases, but these extension families are the stable orientation surface.
+Exact module sets can evolve between releases; treat this as a current orientation map (reviewed February 17, 2026), not a fixed compatibility contract.
 
 `naeural_core` provides backbone modules and runtime contracts, while `edge_node` operationalizes
 and extends those capabilities for network runtime behavior.

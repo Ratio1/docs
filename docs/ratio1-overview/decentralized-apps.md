@@ -16,7 +16,9 @@ A typical deployment combines:
 - Deeploy lifecycle control for rollout and operations;
 - plugin-based execution on edge nodes;
 - CStore for live coordination and R1FS for durable artifacts;
-- visibility through `app.ratio1.ai` and `explorer.ratio1.ai`.
+- deployment operations through `deeploy.ratio1.ai` and Deeploy API;
+- account/license flows through `app.ratio1.ai`;
+- runtime visibility through `explorer.ratio1.ai`.
 
 ## Service lifecycle
 
@@ -50,8 +52,8 @@ licensed and KYC/KYB-backed roles supporting accountable operations.
 ## SDK and tutorial content
 
 SDK tutorials are important for learning and low-level integration, but they are not the default
-production operating playbook. Older tutorial flows should be treated as historical implementation
-guidance when they diverge from current managed production workflows.
+production operating playbook. For managed production lifecycle, use Deeploy UI/API first; treat older
+tutorial flows as implementation references when they diverge from current managed workflows.
 
 ## Ground truth references
 

@@ -19,7 +19,8 @@ runtime context, and CLI-based fleet operations.
 ## Developer workflow vs production workflow
 
 - **Developer workflow**: iterate with SDK/CLI, test callbacks and pipeline behavior, validate assumptions.
-- **Production workflow**: run managed delivery through licensed infrastructure and deployment surfaces.
+- **Production workflow**: run managed delivery through Deeploy UI/API on licensed infrastructure.
+- **Operational split**: use `deeploy.ratio1.ai` for deployment operations, `app.ratio1.ai` for license/account flows, and `explorer.ratio1.ai` for telemetry.
 - **Cross-reference**: use [Ratio1 Overview](../ratio1-overview/) for orchestration/economics/runtime architecture.
 
 ## In this section
@@ -41,6 +42,7 @@ Supporting:
 - https://ratio1.ai/blog/ratio1-sdk-for-typescript-your-bridge-to-edge-nodes
 - https://ratio1.ai/blog/go-developers-meet-the-new-ratio1-sdk-and-sandbox
 - https://ratio1.ai/blog/empowering-the-nodejs-ecosystem
+- https://deeploy.ratio1.ai/
 - https://app.ratio1.ai/
 - https://explorer.ratio1.ai/
 
