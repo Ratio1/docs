@@ -50,7 +50,8 @@ licensed and KYC/KYB-backed roles supporting accountable operations.
 ## SDK and tutorial content
 
 SDK tutorials are important for learning and low-level integration, but they are not the default
-production operating playbook. Pre-2.5 tutorials should be treated as historical implementation guidance.
+production operating playbook. Older tutorial flows should be treated as historical implementation
+guidance when they diverge from current managed production workflows.
 
 ## Ground truth references
 

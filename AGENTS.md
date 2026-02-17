@@ -83,11 +83,14 @@ For Cloud deployment and orchestration overview:
 - https://ratio1.ai/blog/migrating-build21-from-aws-to-ratio1
 - https://ratio1.ai/blog/deploy-your-app-with-ratio1-s-worker-app-runner-no-ci-cd-required
 - https://ratio1.ai/blog/introducing-the-worker-app-runner-deploy-from-git-to-edge
+- https://ratio1.ai/blog/introducing-multi-node-launcher-r1setup-gpu-deployment-at-scale-made-simple
 
 For ecosystem business model, trust/governance, and competitive positioning:
 - https://ratio1.ai/blog/the-csp-business-blueprint
 - https://ratio1.ai/blog/redmesh-market-analysis-and-positioning-vs-competitors
 - https://ratio1.ai/blog/the-trust-protocol-inside-ratio1-s-node-governance-and-blacklisting-system
+- https://ratio1.ai/blog/who-will-be-looking-for-us-the-ratio1-ideal-customer-profile-and-more-v0-3
+- https://ratio1.ai/blog/from-zero-to-node-runner-mainnet
 
 For existing application templates and frameworks:
 - https://ratio1.ai/blog/ratio1-redmesh-decentralized-distributed-cybersecurity

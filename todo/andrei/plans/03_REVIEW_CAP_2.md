@@ -72,10 +72,10 @@ Chapter 2 is materially improved and aligned with current Ratio1 ecosystem narra
 
 # TODO Execution Checklist (Patch Plan)
 1. `docs/ratio1-overview/the-plugins-system.md`
-- [ ] Update extension surface list to match current `edge_node` tree (`business/default/data`) or mark examples as release-dependent.
-- [ ] Remove `r1fs` from `extensions/business/` examples unless a direct code-path citation is added.
+- [x] Update extension surface list to match current `edge_node` tree (`business/default/data`) or mark examples as release-dependent.
+- [x] Remove `r1fs` from `extensions/business/` examples unless a direct code-path citation is added.
 2. `docs/ratio1-overview/decentralized-apps.md`
-- [ ] Replace `Pre-2.5` with source-backed wording, or cite a canonical release/changelog entry for the exact cutoff.
+- [x] Replace `Pre-2.5` with source-backed wording, or cite a canonical release/changelog entry for the exact cutoff.
 
 # Source Set Used
 Core/context:
