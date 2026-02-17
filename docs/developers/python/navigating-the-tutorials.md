@@ -26,9 +26,13 @@ an equal-priority list.
    - `ex08_custom_webapi.py`
    - `ex13_launch_repo_based_webapp.py`
    - `ex16_launch_repo_based_http_server.py`
+   - `ex17_launch_repo_based_balanced_webapp.py`
    - `ex18_deploy_container_webapi.py`
-   - `ex23_deploy_worker_app.py`
-5. **Bots and operational examples**:
+5. **Deeploy and operational examples**:
+   - `ex19_deeploy_container_example.py`
+   - `ex20_deeploy_telegram_bot.py`
+   - `ex22_deeploy_custom_code.py`
+6. **Bots and operational examples**:
    - `ex10`, `ex11`, `ex12` (telegram bot patterns)
    - `ex21_telegram_community_bot.py`
 
@@ -37,11 +41,12 @@ an equal-priority list.
 - **Learning/tutorial-first**:
   - `ex01*`, `ex02*`, `ex03*`, `ex04*`, `ex05*`, `ex06*`, `ex07*`
 - **Integration/app patterns**:
-  - `ex08`, `ex13`, `ex16`, `ex18`, `ex19`, `ex20`, `ex22`, `ex23`
+  - `ex08`, `ex09`, `ex13`, `ex16`, `ex17`, `ex18`
+- **Deeploy/operations patterns**:
+  - `ex19`, `ex20`, `ex22`
 - **Specialized demos**:
-  - `ex24_multi_video_stream_monitor.py`
-  - `ex25_local_serving_api.py`
-  - `ex26_cerviguard_war_loopback.py`
+  - `ex14_wallets.py`
+  - `ex15_telegram_rogue_style_game.py`
   - `eth2025/*`
 
 ## Reading guidance

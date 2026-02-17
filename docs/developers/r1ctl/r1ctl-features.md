@@ -13,7 +13,6 @@ This page maps `r1ctl` features to practical command groups and usage patterns.
 - `r1ctl get nodes`
 - `r1ctl get nodes --peered --wide`
 - `r1ctl get supervisors --wide`
-- `r1ctl get comms`
 - `r1ctl get networks`
 
 Use this group first for troubleshooting connectivity, peering, and active fleet status.
@@ -26,7 +25,7 @@ Use this group first for troubleshooting connectivity, peering, and active fleet
 
 Notes:
 - availability checks use oracle-response tooling in CLI implementation;
-- `--json` mode exists for raw output where supported.
+- `--json` mode is available on `get avail` and `get apps`.
 
 ## 3) Local client configuration (`config`)
 
@@ -34,6 +33,7 @@ Notes:
 - `r1ctl config addr`
 - `r1ctl config network --set mainnet`
 - `r1ctl config network --set testnet`
+- `r1ctl config network --set devnet`
 - `r1ctl config alias --set my-dev-alias`
 - `r1ctl config reset`
 
@@ -52,7 +52,7 @@ These commands are operational actions, not diagnostics. Verify target and autho
 - `r1ctl oracle-rollout`
 - `r1ctl oracle-rollout --skip-seeds`
 - `r1ctl oracle-rollout --skip-oracles`
-- `r1ctl oracle-rollout --skip-workers`
+- `r1ctl oracle-rollout --no-timeout`
 
 `oracle-rollout` includes explicit confirmation flow and group sequencing in current CLI logic.
 

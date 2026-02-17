@@ -25,7 +25,7 @@ r1ctl --help
 ## Primary command families
 
 - `get ...`
-  - read-only views (nodes, supervisors, comm relays, availability, apps, networks).
+  - read-only views (nodes, supervisors, availability, apps, networks, address lookups).
 - `config ...`
   - local client config operations (show/reset/address/network/alias).
 - `inspect`

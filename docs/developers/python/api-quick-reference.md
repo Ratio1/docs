@@ -45,8 +45,8 @@ from ratio1 import (
   - create-if-missing/attach-if-existing workflow.
 - `create_chain_dist_custom_job(...)`
   - helper for distributed custom-code jobs.
-- `create_web_app(...)`, `create_custom_webapi(...)`, `create_container_web_app(...)`, `create_worker_web_app(...)`
-  - app-oriented deployment helpers.
+- `create_web_app(...)`, `create_custom_webapi(...)`, `create_container_web_app(...)`
+  - app-oriented deployment helpers exposed by the current SDK.
 - `get_network_known_nodes(...)`
   - returns network report data (tabular report + reporter metadata).
 - `get_nodes_apps(...)`

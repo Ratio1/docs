@@ -20,10 +20,13 @@ Source of truth for scope: `todo/README.md`
 - [x] `5.5.` r1ctl - the kubectl for Ratio1
 - [x] `5.5.1.` r1ctl Overview - overview presentation with no details
 - [x] `5.5.2.` r1ctl Features
-- [ ] `8.` Application Templates - introduction to Ratio1 application templates
+- [x] `8.` Application Templates - introduction to Ratio1 application templates
 
 ## QA per Section
 
-- [x] Content checked against core Ratio1 resources in `AGENTS.md` (Chapter 2, Chapter 5)
-- [x] CRITIC pass completed and refinements applied (Chapter 2, Chapter 5)
-- [x] Links and examples validated (Chapter 2, Chapter 5)
+- [x] Content checked against core Ratio1 resources in `AGENTS.md` (Chapter 2)
+- [x] Content checked against core Ratio1 resources in `AGENTS.md` (Chapter 5)
+- [x] CRITIC pass completed and refinements applied (Chapter 2)
+- [x] CRITIC pass completed and refinements applied (Chapter 5)
+- [x] Links and examples validated (Chapter 2)
+- [x] Links and examples validated (Chapter 5)

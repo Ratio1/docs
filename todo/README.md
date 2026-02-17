@@ -99,7 +99,7 @@ Each contributor workspace includes:
 7. Other Tools - introduction to other Ratio1 tools (P)
 7.1. Telegram Bot - using the Ratio1 Telegram Bot (Ale)
 
-8. Application Templates - introduction to Ratio1 application templates (AID)
+8. [x] Application Templates - introduction to Ratio1 application templates (AID)
 8.1. R1FS Demo - js/ts demo application for R1FS (Ale)
 8.1.1. How to Deeploy - deployment details of R1FS Demo (Ale)
 8.1.2. How to Develop - technical details of R1FS Demo (Ale)

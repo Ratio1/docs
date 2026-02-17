@@ -10,7 +10,7 @@ description: the kubectl for Ratio1
 
 ## What `r1ctl` is for
 
-- network visibility (nodes, supervisors, communication relays);
+- network visibility (nodes, supervisors, networks, availability checks);
 - node/app inspection from your authorized client context;
 - operational commands (restart/shutdown/rollout) where permitted;
 - local client configuration (network, alias, address).

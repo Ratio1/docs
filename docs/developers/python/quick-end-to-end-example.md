@@ -36,7 +36,7 @@ def remote_job(plugin: CustomPluginTemplate):
     # Runs on the remote node.
     return {
         "node_addr": plugin.node_addr,
-        "node_alias": plugin.e2_addr,
+        "node_e2_addr": plugin.e2_addr,
         "message": "hello from remote execution",
     }
 
