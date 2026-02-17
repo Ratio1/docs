@@ -1,7 +1,7 @@
 # TODO_BLEO
 
 Owner: Bleo (`Bleo`)
-Source of truth for scope: `STRUCTURE.md`
+Source of truth for scope: `todo/README.md`
 
 ## Sections to Write/Prepare
 

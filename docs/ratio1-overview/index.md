@@ -16,7 +16,7 @@ operate those pipelines through SDK and app-level orchestration surfaces.
 - **SDK control plane**: `ratio1_sdk` provides `Session`, `Pipeline`, and `Instance` abstractions for deployment and operations.
 - **Decentralized orchestration**: direct SDK orchestration, ChainDist cooperative jobs, and Deeploy-managed app deployment.
 - **Decentralized data layers**: R1FS for file-oriented distributed storage and CStore/ChainStorage for shared in-memory coordination.
-- **Operational surfaces**: `explorer.ratio1.ai` for network visibility and `app.ratio1.ai` for application-level workflows.
+- **Operational surfaces**: `explorer.ratio1.ai` for network visibility, `app.ratio1.ai` for Node Operator fleet management, and `deeploy.ratio1.ai` for CSP deployment workflows.
 
 ## Execution model (quick mental map)
 
@@ -46,3 +46,4 @@ operate those pipelines through SDK and app-level orchestration surfaces.
   - https://ratio1.ai/blog
   - https://explorer.ratio1.ai/
   - https://app.ratio1.ai/
+  - https://deeploy.ratio1.ai/

@@ -1,6 +1,35 @@
-# Ratio1 Documentation Structure
+# TODO Index
 
->Instructions: everything after dash is a short description of the content to be included in that section/page and does not represent the actual title.
+This folder centralizes contributor queues and working spaces.
+
+## Contributor Queues
+
+- `TODO_ANDREI.md`
+- `TODO_PETRICA.md`
+- `TODO_VITALII.md`
+- `TODO_ALESSANDRO.md`
+- `TODO_BASTIA.md`
+- `TODO_BLEO.md`
+
+## Contributor Workspaces
+
+- `andrei/`
+- `petrica/`
+- `vitalii/`
+- `alessandro/`
+- `bastia/`
+- `bleo/`
+
+Each contributor workspace includes:
+
+- `plans/` for execution plans
+- `prompts/` for reusable prompts
+- `scraps/` for rough notes and temporary material
+
+## Ratio1 Documentation Structure
+
+> Moved from the old `STRUCTURE.md`.
+> Instructions: everything after dash is a short description of the content to be included in that section/page and does not represent the actual title.
 
 1. Ratio1 Docs - welcome message (P)
 

@@ -36,13 +36,15 @@ This split keeps decentralized apps responsive while still enabling artifact per
 
 ## Product surfaces around decentralized apps
 
-- `app.ratio1.ai`: application-focused entry points and user workflows.
+- `app.ratio1.ai`: Node Operator fleet management.
+- `deeploy.ratio1.ai`: CSP workflows, deployments, and cloud resource management.
 - `explorer.ratio1.ai`: network-level visibility (nodes, versions, licenses, activity snapshots).
 
 ## Ground truth references
 
 - https://github.com/Ratio1/ratio1_sdk
 - https://github.com/Ratio1/edge_node
+- https://deeploy.ratio1.ai/
 - https://app.ratio1.ai/
 - https://explorer.ratio1.ai/
 

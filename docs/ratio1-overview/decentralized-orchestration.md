@@ -75,6 +75,7 @@ the use case.
 
 - https://github.com/Ratio1/ratio1_sdk
 - https://github.com/Ratio1/edge_node
+- https://deeploy.ratio1.ai/
 - https://app.ratio1.ai/
 - https://explorer.ratio1.ai/
 

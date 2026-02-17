@@ -1,7 +1,7 @@
 # TODO_ALESSANDRO
 
 Owner: Alessandro (`Ale`)
-Source of truth for scope: `STRUCTURE.md`
+Source of truth for scope: `todo/README.md`
 
 ## Sections to Write/Prepare
 

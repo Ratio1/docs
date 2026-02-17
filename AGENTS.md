@@ -2,7 +2,7 @@
 
 ## Purpose of This Repository
 
-This repository is the Ratio1 documentation hub, implemented as a Docusaurus site and structured by `STRUCTURE.md`.
+This repository is the Ratio1 documentation hub, implemented as a Docusaurus site and structured by `todo/README.md` (Ratio1 Documentation Structure section).
 Its purpose is to produce and maintain accurate, audience-specific docs for the Ratio1 ecosystem, including:
 - platform overview and architecture,
 - node operators,
@@ -22,23 +22,33 @@ Its purpose is to produce and maintain accurate, audience-specific docs for the 
 
 ## Ownership TODO Files
 
-Keep owner task lists next to `STRUCTURE.md`:
-- `TODO_VITALII.md`
-- `TODO_PETRICA.md`
-- `TODO_ANDREI.md`
-- `TODO_ALESSANDRO.md`
-- `TODO_BASTIA.md`
-- `TODO_BLEO.md`
+Keep owner task lists in `/todo` (repo root):
+- `todo/TODO_VITALII.md`
+- `todo/TODO_PETRICA.md`
+- `todo/TODO_ANDREI.md`
+- `todo/TODO_ALESSANDRO.md`
+- `todo/TODO_BASTIA.md`
+- `todo/TODO_BLEO.md`
 
 Use these files as the working queue for section drafting and updates.
+
+Contributor working folders are also in `/todo`:
+- `todo/andrei/`
+- `todo/petrica/`
+- `todo/vitalii/`
+- `todo/alessandro/`
+- `todo/bastia/`
+- `todo/bleo/`
+
+Each contributor folder is for plans, prompts, scraps, and related WIP materials.
 
 ## Execution Workflow for Every Agent Task
 
 For each assigned task (example: `2.4. The Plugins system`), follow this sequence:
 
 1. Identify the contributor first (`V`, `P`, `AID`, `Ale`, `B`, `Bleo`) from the assignment.
-2. Use `STRUCTURE.md` as the global taxonomy and scope map.
-3. Use the contributor-specific queue file `TODO_<CONTRIBUTOR>.md` as the task source of truth for what to write next.
+2. Use `todo/README.md` (Ratio1 Documentation Structure section) as the global taxonomy and scope map.
+3. Use the contributor-specific queue file `todo/TODO_<CONTRIBUTOR>.md` as the task source of truth for what to write next.
 4. Implement/update the target section.
 5. Switch to **CRITIC** personality after drafting.
 6. CRITIC validates content against Ratio1 ground truth sources (repos, whitepaper, blog, product apps, and other official references).
@@ -66,10 +76,11 @@ For each assigned task (example: `2.4. The Plugins system`), follow this sequenc
 - https://ratio1.ai/blog
 - https://explorer.ratio1.ai/
 - https://app.ratio1.ai/
+- https://deeploy.ratio1.ai/
 
 ### Local Canonical Sources
 
-- `STRUCTURE.md`
+- `todo/README.md`
 - `README.md`
 - `docs/`
 
