@@ -2,13 +2,14 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
+import pkg from "./package.json";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-const appVersionFromEnv =
-	process.env.DANGEROUSLY_EXPOSE_TO_CLIENT_VERSION ??
-	process.env.NEXT_PUBLIC_APP_VERSION ??
-	process.env.APP_VERSION ??
-	process.env.VERSION;
+const appVersionFromEnv = pkg.version;
+	// process.env.DANGEROUSLY_EXPOSE_TO_CLIENT_VERSION ??
+	// process.env.NEXT_PUBLIC_APP_VERSION ??
+	// process.env.APP_VERSION ??
+	// process.env.VERSION;
 
 const commitHashFromEnv =
 	process.env.DANGEROUSLY_EXPOSE_TO_CLIENT_COMMIT_HASH ??
