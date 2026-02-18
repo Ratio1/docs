@@ -113,3 +113,9 @@ section of the app.
 Once purchased, your Node Deed license is stored in your wallet and is visible
 in the **Licenses & Nodes** section. From this section, you can manage your
 licenses and link them to your running nodes to activate them.
+
+---
+
+## Notable date
+
+- Reviewed on **February 18, 2026**.

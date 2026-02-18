@@ -22,6 +22,8 @@ entirely by the protocol: availability and work are continuously verified,
 rewards are calculated transparently, and incentives are aligned with real
 network contribution.
 
+---
+
 As a node operator, you:
 
 - Run licensed Edge Nodes on your own hardware or cloud infrastructure
@@ -34,12 +36,14 @@ identifiable, and accountable participants, enabling higher reliability,
 stronger guarantees, and optional enterprise-grade compliance - without
 sacrificing decentralization. Learn more about Ratio1’s permissioned yet
 trustless approach in the
-[Email registration & KYC/KYB](./app/email-registration-and-kyc-kyb)
-section of the docs or in our
+[Email registration & KYC/KYB](./app/email-registration-and-kyc-kyb) section of
+the docs or in our
 [Permissionless vs. Trustless article](https://ratio1.ai/blog/permissionless-vs-trustless).
 
 This section guides you through everything required to operate nodes
 effectively, from initial setup to day-to-day management.
+
+---
 
 ## In this section
 
@@ -47,6 +51,8 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
+---
+
 ## Notable date
 
-- TBD (add a source link)
+- Reviewed on **February 18, 2026**.

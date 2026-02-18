@@ -47,4 +47,4 @@ fundamentals, then dive deeper as needed.
 
 ## Notable date
 
-- Protocol genesis: May 23, 2025
+- Reviewed on **February 18, 2026**.
