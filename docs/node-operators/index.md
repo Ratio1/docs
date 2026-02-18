@@ -40,6 +40,28 @@ trustless approach in the
 the docs or in our
 [Permissionless vs. Trustless article](https://ratio1.ai/blog/permissionless-vs-trustless).
 
+:::note Important Notice About Licenses
+Due to compliance with European jurisdiction, individuals and companies from
+the following prohibited countries are not eligible to purchase 
+Licenses or link a license to a node to join the Ratio1 protocol.
+
+**Prohibited Countries:** Afghanistan, Barbados, Belarus, Burkina Faso,
+Burundi, Cambodia, Cameroon, Cayman Islands, Central African Republic, Congo
+(the Democratic Republic of), Egypt, Guinea, Guinea-Bissau, Haiti, Iran, Iraq,
+Jamaica, Jordan, Korea (the Democratic People's Republic of), Lebanon, Libya,
+Mali, Morocco, Mozambique, Myanmar, Nicaragua, Pakistan, Panama, Russian
+Federation, Senegal, Somalia, South Sudan, Sri Lanka, Sudan, Syria Arab
+Republic, Trinidad and Tobago, Tunisia, Uganda, Ukraine, Vanuatu, Venezuela,
+Yemen, Zimbabwe.
+
+If you are a resident or entity of any of the above countries, you are
+prohibited from participating in the License sale or acting as a node runner
+in the protocol.
+
+If there are changes at the jurisdictional level, we will promptly update this
+list to reflect the most current regulatory requirements.
+:::
+
 This section guides you through everything required to operate nodes
 effectively, from initial setup to day-to-day management.
 

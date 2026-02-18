@@ -122,14 +122,6 @@ instead of contracts, accounts, or centralized cloud providers.
 
 ---
 
-## Next steps
-
-- Complete email registration and KYC/KYB
-- Acquire your first Node Deed license
-- Return to [Getting Started with the main Dashboard](../)
-
----
-
 ## Notable date
 
 - Reviewed on **February 18, 2026**.
