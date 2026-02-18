@@ -1,5 +1,5 @@
 ---
-title: Linking/Unlinking your Edge Node
+title: Linking/unlinking your edge node
 sidebar_position: 4
 description: Learn how to link or unlink your license to your Edge Node
 ---
@@ -11,6 +11,7 @@ description: Learn how to link or unlink your license to your Edge Node
 - What must be ready before linking
 - Why a linked license is required for network participation
 - How to link a license to your node ETH address in the app
+- How to change the linked node ETH address in the app
 - How to unlink a node from a license in the app
 
 ---
@@ -55,22 +56,29 @@ you provided. ![Linked License](../img/10.jpg)
 
 ## Unlink your node from your license
 
-1. Open `app.ratio1.ai` and connect the wallet that owns your license.
-2. Go to **Licenses & Nodes** and find a license that already has a linked node.
-3. Open the license menu and select **Unlink**.
-4. Confirm unlinking.
-5. Sign the transaction in your wallet.
+1. Open the license menu and select **Unlink**.
+2. Confirm unlinking.
+3. Sign the transaction in your wallet.
 
 After confirmation, the node is unlinked from that license.
 
+## Change node
+
+1. Open the license menu and select **Change node**.
+2. Fill in the new node ETH address.
+3. Confirm the change.
+4. Sign the transaction in your wallet.
+
+After confirmation, the license is linked to the new node.
+![Unlink node/Change node](../img/11.jpg)
+
 :::note Cooldown after unlinking 
-Once a node is unlinked, a **24-hour cooldown**
+Once a node is unlinked or chaned with another one, a **24-hour cooldown**
 period applies before another node can be linked to that license. 
 :::
 
 :::warning Claim rewards first 
-Claim your rewards before you unlink a node or
-change to another node. 
+Claim your rewards before you unlink or change a node.
 :::
 
 ---

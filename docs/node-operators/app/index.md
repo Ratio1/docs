@@ -1,7 +1,7 @@
 ---
-title: Getting Started with the Node Operators App
+title: Getting started with the node operators app
 sidebar_position: 1
-description: Intro to the Node Operators App
+description: Intro to the node operators app
 ---
 
 # Getting Started with the Node Operators App

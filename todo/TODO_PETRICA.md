@@ -5,13 +5,14 @@ Source of truth for scope: `todo/README.md`
 
 ## Sections to Write/Prepare
 
-- [ ] `1.` Ratio1 Docs - welcome message
-- [ ] `3.` For Node Operators - introduction to node operation
-- [ ] `3.1.` Getting Started with the main Dashboard - intro to the dashboard
-- [ ] `3.1.1.` Buying your first Ratio1 license - purchasing and activating a license
-- [ ] `3.1.2.` Linking your Edge Node - connecting your license with your nodes
-- [ ] `3.1.3.` Rewards Understanding and Claiming - how rewards work on Ratio1
-- [ ] `3.1.4.` Selling or transferring your license - transferring ownership of your license
+- [x] `1.` Ratio1 Docs - Welcome message
+- [x] `3.` For Node Operators - Introduction to node operation
+- [x] `3.1.` Getting Started with the Node Operators App - Intro to the Node Operators App
+- [x] `3.1.1.` Email registration & KYC/KYB - Getting your wallet verified
+- [x] `3.1.2.` Buying your first Ratio1 license - Purchasing a Node Deed license
+- [x] `3.1.3.` Linking/Unlinking your Edge Node - Learn how to link or unlink your license to your Edge Node
+- [x] `3.1.4.` Rewards Understanding and Claiming - Overview of reward types and how to earn and claim them on Ratio1.
+- [x] `3.1.5.` Selling, buying, or transferring a license - transferring ownership of your license
 - [ ] `4.` For CSPs - introduction to CSP operation
 - [ ] `4.1.` Getting Started with Ratio1 for CSPs - why and intro to the requirements
 - [ ] `4.1.1.` Becoming a CSP - steps to become a CSP on Ratio1
