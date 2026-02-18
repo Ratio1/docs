@@ -15,6 +15,12 @@ In this chapter, templates are organized as practical starting points with separ
 - how template pages split into `How to Develop` and `How to Deeploy`;
 - how to validate deployed behavior with Ratio1 runtime surfaces.
 
+## Main templates at a glance
+
+- **RedMesh Demo (flagship)**: cybersecurity-oriented template showing multi-component service behavior on decentralized edge runtime.
+- **R1FS Demo**: storage-centered template for artifact flows and integration patterns around R1FS.
+- **Docs Template (this docs app)**: a practical template for documentation-style web delivery and Deeploy lifecycle walkthroughs.
+
 ## How to use templates effectively
 
 1. Pick the closest template to your target use case.
@@ -48,4 +54,4 @@ Supporting:
 - https://ratio1.ai/blog/shipping-the-future-why-today-s-3send-launch-shows-what-the-ratio1-protocol-was-built-for
 
 ## Notable date
-- Reviewed on **February 17, 2026**.
+- Reviewed on **February 18, 2026**.

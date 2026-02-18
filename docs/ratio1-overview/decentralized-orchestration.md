@@ -44,12 +44,14 @@ Both rely on the same decentralized plugin-based runtime, while differing in pac
 
 ## ChainDist and direct SDK orchestration
 
-Ratio1 also exposes lower-level orchestration modes outside managed app-style deployment:
+Ratio1 also exposes native orchestration paths outside managed app-style deployment:
 
-- **ChainDist** for cooperative distributed jobs (fan-out workers + aggregation logic).
-- **Direct SDK orchestration** for advanced control, prototyping, integration workflows, and custom runtime handling.
+- **ChainDist** for cooperative distributed jobs (fan-out workers + aggregation), with smart-contract-driven job lifecycle signals (for example job ID/payment checks, oracle validation updates, and close/reward transitions).
+- **Direct SDK orchestration** for explicit pipeline/instance control, custom control-plane logic, and advanced integration workflows.
 
-Direct SDK and ChainDist control remain important, but they are interface-level options rather than the default managed production posture.
+Deeploy, ChainDist, and direct SDK orchestration are complementary layers on the same runtime.
+For most production fleets, Deeploy is the default control plane; ChainDist and direct SDK are used when
+teams need lower-level distributed or programmatic control.
 
 ## Role split in orchestration
 
@@ -79,7 +81,7 @@ Supporting:
 
 ## Notable date
 
-- Reviewed on **February 17, 2026**.
+- Reviewed on **February 18, 2026**.
 
 ## Next steps
 

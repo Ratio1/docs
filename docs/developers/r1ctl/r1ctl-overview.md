@@ -6,7 +6,7 @@ description: command-line operational model and usage scope
 
 # r1ctl Overview
 
-`r1ctl` is the CLI surface for SDK-connected operational and diagnostic workflows.
+`r1ctl` is the `kubectl`-style CLI surface for Ratio1 decentralized fleet operations.
 It is useful when you want fast terminal-level control without writing Python scripts.
 
 ## Install and check
@@ -55,7 +55,7 @@ Supporting:
 - https://explorer.ratio1.ai/
 
 ## Notable date
-- Reviewed on **February 17, 2026**.
+- Reviewed on **February 18, 2026**.
 
 ## Next steps
 - Back to [r1ctl](../).

@@ -11,10 +11,10 @@ runtime context, and CLI-based fleet operations.
 
 ## Choose your path
 
-- **Python SDK**: fastest path for custom workloads, plugin orchestration, and integration code.
+- **Python SDK**: fastest path for custom workloads, plugin orchestration, and native Ratio1 app logic (including apps with containerized front-end/middle-tier layers).
 - **JavaScript / Go SDKs**: language-native integration surfaces for teams outside Python.
 - **Sandbox workflows**: local and controlled experimentation before wider rollout.
-- **`r1ctl` CLI**: operator/developer command-line control for nodes, network reports, and app inspection.
+- **`r1ctl` CLI**: `kubectl`-like command-line control for managing Ratio1 decentralized fleets, nodes, and diagnostics.
 
 ## Developer workflow vs production workflow
 
@@ -47,4 +47,4 @@ Supporting:
 - https://explorer.ratio1.ai/
 
 ## Notable date
-- Reviewed on **February 17, 2026**.
+- Reviewed on **February 18, 2026**.

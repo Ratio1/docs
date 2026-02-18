@@ -6,45 +6,54 @@ description: understanding the edge node software architecture
 
 # The Edge Node Software
 
-For Python SDK users, the edge node is the runtime endpoint that receives your pipeline config,
-loads plugin instances, and executes workload logic.
+This page is about how `edge_node` itself works as runtime software. The SDK is only one control
+surface; the core topic here is pipeline orchestration and plugin execution on Ratio1 nodes.
 
-## Runtime layering (developer view)
+## What `edge_node` orchestrates
 
-1. **SDK client layer** (`ratio1` package):
-   - builds commands/configs and sends them through session communication channels.
-2. **Edge node runtime layer** (`edge_node` repo):
-   - receives commands, hosts pipelines/instances, and emits payloads/notifications/heartbeats.
-3. **Core contracts layer** (`naeural_core` repo):
-   - provides foundational runtime contracts and engine behavior used by edge-node packaging.
+At runtime, edge nodes coordinate:
 
-## Why this matters for Python developers
+1. **Pipeline and instance lifecycle**:
+   - receive deployment config, materialize pipelines, run plugin instances, and emit payloads/notifications/heartbeats.
+2. **Multi-plane plugin execution**:
+   - run data capture, business logic, and serving plugins as one coordinated workload graph.
+3. **Containerized execution paths**:
+   - support container app patterns including container-in-container orchestration used by app-runner flows.
+4. **Blockchain/oracle interaction**:
+   - interact with chain-facing components for escrow/job/oracle flows, creating immutable on-chain anchors for critical lifecycle events.
+5. **Endpoint provisioning**:
+   - expose deployable API/service endpoints through business plugins and serving processes.
 
-- API calls like `create_pipeline(...)` and `deploy()` map to remote runtime config transactions.
-- Plugin signatures and instance IDs are not local abstractions only; they are runtime identifiers on nodes.
-- Callback design (`on_data`, `on_notification`, `on_heartbeat`) should assume distributed and asynchronous behavior.
-- Storage and coordination semantics (R1FS/ChainStore) belong to runtime architecture, not only client code.
+## Runtime layering (system view)
+
+1. **Core contracts/engines** (`naeural_core`):
+   - foundational contracts for plugin execution and runtime behavior.
+2. **Edge packaging/orchestration** (`edge_node`):
+   - production node entrypoints, extension families, operational plugins, and deployment packaging.
+3. **Control clients** (SDK/CLI/Deeploy):
+   - user-facing control planes that submit intents to the runtime.
 
 ## Extension surfaces and plugin outcomes
 
-Edge runtime behavior is extended through plugin/extension families in the edge-node codebase.
-Exact module composition can shift across releases. In the current tree, the main extension groups are:
+In the current edge runtime tree, extension families map to different execution responsibilities:
 
-- `extensions/business/` for runtime workload modules,
-- `extensions/data/` for data/listener integrations,
-- `extensions/serving/` for serving/inference surfaces,
+- `extensions/business/` for business plugins that define endpoints, orchestration behavior, and symbolic/heuristic rules on top of neural-model outputs.
+- `extensions/data/` for Data Capture Thread plugins that ingest/listen/poll and normalize input streams.
+- `extensions/serving/` for Serving Process plugins that host inference/serving workloads (they run as processes, not threads).
 - `extensions/utils/` for shared utility components.
 
-For Chapter 2 architectural context, see:
+Exact module composition can evolve between releases; treat this as a runtime model, then verify concrete modules in the target branch.
+
+## Why this matters for developers
+
+- Python is the primary language surface for native Ratio1 applications built from plugin pipelines.
+- Native applications can still include containerized front-ends or middle tiers when that is the best deployment shape.
+- SDK calls (`create_pipeline(...)`, `deploy()`, callbacks) are controls over this runtime architecture, not substitutes for understanding it.
+- Storage and coordination semantics (R1FS/ChainStore) and ChainDist behaviors are runtime-level concerns.
+
+For broader architectural context, see:
 - [Ratio1 Overview](../../ratio1-overview/)
 - [The Plugins System](../../ratio1-overview/the-plugins-system)
-
-## Practical implications for your SDK code
-
-- Keep instance configs explicit and deterministic.
-- Use one pipeline per workload concern instead of overloading a single pipeline.
-- Treat network/node status as dynamic; wait for nodes/config where needed.
-- Prefer source-backed plugin signatures and helper presets over guessed constants.
 
 ## Ground truth references
 
@@ -58,7 +67,7 @@ Supporting:
 - https://ratio1.ai/blog/what-is-ratio1-and-why-it-matters
 
 ## Notable date
-- Reviewed on **February 17, 2026**.
+- Reviewed on **February 18, 2026**.
 
 ## Next steps
 - Back to [Python](../).

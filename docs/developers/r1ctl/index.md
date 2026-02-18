@@ -6,11 +6,13 @@ description: the kubectl for Ratio1
 
 # r1ctl
 
-`r1ctl` is the SDK-provided command-line client for network and node operations from a terminal workflow.
+`r1ctl` is a `kubectl`-like CLI for managing Ratio1 decentralized fleets from terminal workflows:
+nodes, supervisors, apps, availability, and operational actions.
 Examples in this chapter were validated against `ratio1` package version `3.5.1`.
 
 ## What `r1ctl` is for
 
+- decentralized fleet visibility and control from one operator/developer command surface;
 - network visibility (nodes, supervisors, networks, availability checks);
 - comm relay and node-address resolution (`get comms`, `get eth`);
 - node/app inspection from your authorized client context;
@@ -38,4 +40,4 @@ Supporting:
 - https://explorer.ratio1.ai/
 
 ## Notable date
-- Reviewed on **February 17, 2026**.
+- Reviewed on **February 18, 2026**.

@@ -8,6 +8,8 @@ description: using the Python SDK for Ratio1
 
 The Python SDK is the most direct way to build and test Ratio1 workloads: connect to the network,
 discover nodes, create pipelines, deploy plugin instances, and consume payloads from remote execution.
+Python is also the primary language surface for native Ratio1 applications built around edge-node plugins,
+even when those applications include container-based front-ends or middle tiers.
 
 ## What this section covers
 
@@ -23,8 +25,9 @@ discover nodes, create pipelines, deploy plugin instances, and consume payloads 
 - You want callback-driven integration (`on_data`, `on_notification`, `on_heartbeat`).
 - You need chain-distributed compute patterns or custom web endpoints from code.
 
-For managed production lifecycle operations, default to Deeploy UI/API; treat direct SDK orchestration
-as development, integration, and advanced control surfaces.
+For managed production lifecycle operations, default to Deeploy UI/API.
+Use direct SDK orchestration when you need explicit pipeline-level control in development, integration,
+or custom production control loops.
 
 ## In this section
 - [Quick end-to-end example](./quick-end-to-end-example)
@@ -46,4 +49,4 @@ Supporting:
 - https://ratio1.ai/blog/build-your-own-sandbox-in-minutes
 
 ## Notable date
-- Reviewed on **February 17, 2026**.
+- Reviewed on **February 18, 2026**.
