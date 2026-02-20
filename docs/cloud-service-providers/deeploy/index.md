@@ -1,5 +1,5 @@
 ---
-title: Deepploying with Deeploy
+title: Deeploying with Deeploy
 sidebar_position: 2
 ---
 

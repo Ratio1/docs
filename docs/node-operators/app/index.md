@@ -21,7 +21,7 @@ Mainnet.
 
 - Account setup and verification requirements
 - Buying and managing Node Deed licenses
-- Linking your hardware to an on-chain license
+- Linking your hardware to an onchain license
 - Understanding and claiming rewards
 - Transferring or selling licenses when needed
 

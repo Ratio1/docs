@@ -20,7 +20,7 @@ At runtime, edge nodes coordinate:
 3. **Containerized execution paths**:
    - support container app patterns including container-in-container orchestration used by app-runner flows.
 4. **Blockchain/oracle interaction**:
-   - interact with chain-facing components for escrow/job/oracle flows, creating immutable on-chain anchors for critical lifecycle events.
+   - interact with chain-facing components for escrow/job/oracle flows, creating immutable onchain anchors for critical lifecycle events.
 5. **Endpoint provisioning**:
    - expose deployable API/service endpoints through business plugins and serving processes.
 

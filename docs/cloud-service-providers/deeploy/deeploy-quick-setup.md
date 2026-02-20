@@ -1,7 +1,7 @@
 ---
 title: Deeploy Quick Setup
 sidebar_position: 2
-description: a end-to-end setup with escroq and stuff
+description: a end-to-end setup with escrow and stuff
 ---
 
 # Deeploy Quick Setup

@@ -12,14 +12,14 @@ Source of truth for scope: `todo/README.md`
 - [x] `3.1.2.` Buying your first Ratio1 license - Purchasing a Node Deed license
 - [x] `3.1.3.` Linking/Unlinking your Edge Node - Learn how to link or unlink your license to your Edge Node
 - [x] `3.1.4.` Rewards Understanding and Claiming - Overview of reward types and how to earn and claim them on Ratio1.
-- [x] `3.1.5.` Selling, buying, or transferring a license - transferring ownership of your license
-- [ ] `4.` For CSPs - introduction to CSP operation
-- [ ] `4.1.` Getting Started with Ratio1 for CSPs - why and intro to the requirements
-- [ ] `4.1.1.` Becoming a CSP - steps to become a CSP on Ratio1
-- [ ] `4.1.1.` Pricing and Business Model Intro - understanding costs and revenue
-- [ ] `4.2.` Deepploying with Deeploy
+- [x] `3.1.5.` Selling, buying, or transferring a license - Learn who can sell, buy, or transfer licenses and how the process works
+- [x] `4.` For Cloud Service Providers - Introduction to operating as a Cloud Service Provider on Ratio1
+- [x] `4.1.` Getting started with Ratio1 for CSPs - Why and intro to the requirements
+- [x] `4.1.1.` Becoming a CSP - Steps to become a CSP on Ratio1
+- [x] `4.1.1.` Pricing and Business Model Intro - understanding costs and revenue
+- [ ] `4.2.` Deeploying with Deeploy
 - [ ] `4.2.1.` Deeploy Overview - overview presentation with no details
-- [ ] `4.2.2.` Deeploy Quick Setup - a end-to-end setup with escroq and stuff
+- [ ] `4.2.2.` Deeploy Quick Setup - a end-to-end setup with escrow and stuff
 - [ ] `4.2.3.` Deeploy Managing Deployments - managing multiple deployments
 - [ ] `4.2.4.` Deeploy End-to-End Example - complete example of a deployment
 - [ ] `6.` The Explorer - short introduction to the Ratio1 Explorer
