@@ -93,7 +93,7 @@ additional domains are billed per Cloudflare pricing.
 
 ## 3. Ready for your first deploy
 
-You are now ready to start deploying on Ratio1; continue with [First deploy](./first-deploy).
+You are now ready to start deploying on Ratio1; continue with [First deploy](./deeploy-first-deploy).
 
 ## Notable date
 
