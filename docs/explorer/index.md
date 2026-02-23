@@ -16,16 +16,19 @@ access to internal tools.
 
 Go to [explorer.ratio1.ai](https://explorer.ratio1.ai/).
 
+---
+
 ## What you can view
 
 Using the Explorer, you can:
 
-- check active nodes and their status
-- view network-wide metrics and activity
-- monitor deployments and workload distribution
-- explore protocol statistics such as adoption levels, node distribution, and
-  network geography
-- inspect ecosystem statistics and operational data
+- check active nodes and their status at `https://explorer.ratio1.ai/`
+- view licenses at `https://explorer.ratio1.ai/licenses`
+- view node operators at `https://explorer.ratio1.ai/node-operators`
+- view CSPs at `https://explorer.ratio1.ai/cloud-service-providers`
+- explore network statistics at `https://explorer.ratio1.ai/stats`
+
+---
 
 ## Why it matters
 
@@ -49,4 +52,4 @@ import DocCardList from '@theme/DocCardList';
 
 ## Notable date
 
-- Reviewed on **February 20, 2026**.
+- Reviewed on **February 23, 2026**.

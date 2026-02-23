@@ -29,11 +29,11 @@ Owner: Petrica (`P`) Source of truth for scope: `todo/README.md`
 - [ ] `4.2.3.` Deeploy Managing Deployments - managing multiple deployments
 - [ ] `4.2.4.` Deeploy End-to-End Example - complete example of a deployment
 - [x] `6.` The Explorer - Short introduction to the Ratio1 Explorer
-- [ ] `6.1.` Nodes and Licenses - how to use the Explorer to view nodes and
+- [x] `6.1.` Nodes and Licenses - How to use the Explorer to view nodes and
       licenses
-- [ ] `6.2.` Nodel Operators and CSPs - how to use the Explorer to view node
+- [x] `6.2.` Nodel Operators and CSPs - How to use the Explorer to view node
       operators and CSPs
-- [ ] `6.3.` Stats and Analytics - how to use the Explorer to view stats and
+- [x] `6.3.` Stats and Analytics - How to use the Explorer to view stats and
       analytics
 - [ ] `7.` Other Tools - introduction to other Ratio1 tools
 - [ ] `8.3.` Docs Template - the documentation site you are currently reading
