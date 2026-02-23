@@ -1,13 +1,15 @@
 ---
 title: Telegram Bot
 sidebar_position: 1
-description: using the Ratio1 Telegram Bot
+description: Using the Ratio1 Telegram Bot
 ---
 
 # Telegram Bot
 
-The Ratio1 Telegram Bot is a lightweight monitoring interface for node operators.
-It helps track wallet-linked nodes and receive status updates directly in Telegram, without opening dashboards or running manual checks each time.
+The Ratio1 Telegram Bot is a lightweight monitoring interface for node
+operators. It helps track wallet-linked nodes and receive status updates
+directly in Telegram, without opening dashboards or running manual checks each
+time.
 
 ## What it is and who it is for
 
@@ -25,7 +27,8 @@ Typical goals:
 
 ## Quick Start
 
-1. Open Telegram and start a private conversation with the [Ratio1 Telegram Bot](https://t.me/Ratio1ai_bot).
+1. Open Telegram and start a private conversation with the
+   [Ratio1 Telegram Bot](https://t.me/Ratio1ai_bot).
 2. Run:
 
 ```text
@@ -86,7 +89,8 @@ Use this when a wallet is no longer relevant for alerts.
 
 ## When you receive messages
 
-- You receive a message when a node from a watched wallet is detected as offline.
+- You receive a message when a node from a watched wallet is detected as
+  offline.
 - You receive another message when that node comes back online.
 
 Typical messages:
@@ -101,15 +105,20 @@ Typical messages:
 
 ## For Developers
 
-This bot also serves as a practical open-source example of how to build Telegram bots on Ratio1.
+This bot also serves as a practical open-source example of how to build Telegram
+bots on Ratio1.
 
 Main pieces:
 
-- `reply(...)` handles Telegram commands such as `/watch`, `/watchlist`, `/unwatch`, and `/nodes`.
-- `loop_processing(...)` runs periodically to detect offline or recovered nodes and send notifications.
-- `create_telegram_simple_bot(...)` deploys the bot pipeline on a Ratio1 node with both handlers attached.
+- `reply(...)` handles Telegram commands such as `/watch`, `/watchlist`,
+  `/unwatch`, and `/nodes`.
+- `loop_processing(...)` runs periodically to detect offline or recovered nodes
+  and send notifications.
+- `create_telegram_simple_bot(...)` deploys the bot pipeline on a Ratio1 node
+  with both handlers attached.
 
-In practice, command handling and periodic monitoring are separated, which keeps the bot responsive while still sending asynchronous alerts.
+In practice, command handling and periodic monitoring are separated, which keeps
+the bot responsive while still sending asynchronous alerts.
 
 Tutorial code:
 [github.com/Ratio1/ratio1_sdk/blob/main/tutorials/ex21_telegram_community_bot.py](https://github.com/Ratio1/ratio1_sdk/blob/main/tutorials/ex21_telegram_community_bot.py)

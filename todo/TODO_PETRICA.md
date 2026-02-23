@@ -35,7 +35,7 @@ Owner: Petrica (`P`) Source of truth for scope: `todo/README.md`
       operators and CSPs
 - [x] `6.3.` Stats and Analytics - How to use the Explorer to view stats and
       analytics
-- [ ] `7.` Other Tools - introduction to other Ratio1 tools
+- [x] `7.` Other Tools - introduction to other Ratio1 tools
 - [x] `8.3.` Docs Template - the documentation site you are currently reading
 - [x] `8.3.1.` How to Deeploy - deployment details of Docs Template
 - [x] `8.3.2.` How to Develop - technical details of Docs Template

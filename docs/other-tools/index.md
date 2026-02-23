@@ -1,13 +1,26 @@
 ---
 title: Other Tools
 sidebar_position: 7
-description: Introduction to other Ratio1 tools
+description:
+  This section includes tools that simplify workflows for Node Operators, Cloud
+  Service Providers, and users of the Ratio1 protocol.
 ---
 
 # Other Tools
 
+This section includes a series of tools designed to simplify the experience for
+Node Operators, Cloud Service Providers, and users of the Ratio1 protocol.
+
+---
+
 ## In this section
-- [Telegram Bot](./telegram-bot)
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />
+
+---
 
 ## Notable date
-- TBD (add a source link).
+
+- Reviewed on **February 23, 2026**.

@@ -22,11 +22,11 @@ Go to [explorer.ratio1.ai](https://explorer.ratio1.ai/).
 
 Using the Explorer, you can:
 
-- check active nodes and their status at `https://explorer.ratio1.ai/`
-- view licenses at `https://explorer.ratio1.ai/licenses`
-- view node operators at `https://explorer.ratio1.ai/node-operators`
-- view CSPs at `https://explorer.ratio1.ai/cloud-service-providers`
-- explore network statistics at `https://explorer.ratio1.ai/stats`
+- check active nodes and their status at **https://explorer.ratio1.ai/**
+- view licenses at **https://explorer.ratio1.ai/licenses**
+- view node operators at **https://explorer.ratio1.ai/node-operators**
+- view CSPs at **https://explorer.ratio1.ai/cloud-service-providers**
+- explore network statistics at **https://explorer.ratio1.ai/stats**
 
 ---
 
