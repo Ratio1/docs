@@ -23,11 +23,12 @@ Owner: Petrica (`P`) Source of truth for scope: `todo/README.md`
 - [x] `4.1.1.` Becoming a CSP - Steps to become a CSP on Ratio1
 - [x] `4.1.1.` Pricing and Business Model Intro - understanding costs and
       revenue
-- [ ] `4.2.` Deeploying with Deeploy
-- [ ] `4.2.1.` Deeploy Overview - overview presentation with no details
-- [ ] `4.2.2.` Deeploy Quick Setup - a end-to-end setup with escrow and stuff
-- [ ] `4.2.3.` Deeploy Managing Deployments - managing multiple deployments
-- [ ] `4.2.4.` Deeploy End-to-End Example - complete example of a deployment
+- [x] `4.2.` Deeploying with Deeploy
+- [x] `4.2.1.` Deeploy Overview - overview presentation with no details
+- [x] `4.2.2.` Deeploy Quick Setup - a end-to-end setup with escrow and stuff
+- [ ] `4.2.3.` Deeploy First Deploy - Create your first project and job, fund deployment, and validate runtime state.
+- [ ] `4.2.4.` Deeploy Managing Deployments - managing multiple deployments
+- [ ] `4.2.5.` Deeploy End-to-End Example - complete example of a deployment
 - [x] `6.` The Explorer - Short introduction to the Ratio1 Explorer
 - [x] `6.1.` Nodes and Licenses - How to use the Explorer to view nodes and
       licenses
@@ -39,7 +40,7 @@ Owner: Petrica (`P`) Source of truth for scope: `todo/README.md`
 - [x] `8.3.` Docs Template - the documentation site you are currently reading
 - [x] `8.3.1.` How to Deeploy - deployment details of Docs Template
 - [x] `8.3.2.` How to Develop - technical details of Docs Template
-- [ ] `10.` Partner Applications - open sourced template-ready partner
+- [x] `10.` Partner Applications - open sourced template-ready partner
       applications built on Ratio1
 - [ ] `10.3.` ASPIRE - decentralized clinical management for various syndromes
 - [ ] `10.3.1.` How to Deeploy - deployment details of ASPIRE
