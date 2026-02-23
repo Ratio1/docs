@@ -2,8 +2,8 @@
 
 This repo is a customized Docusaurus v3 starter tailored for deploying
 documentation on Ratio1 edge nodes. It keeps the classic DX while adding
-Ratio1-specific branding, metadata, hooks (build hash display, edge host
-indicator), and a customized search UI so you can ship a docs site that fits the
+Ratio1-specific branding, metadata, versioning, edge host
+indicator, and a customized search UI so you can ship a docs site that fits the
 Ratio1 ecosystem out of the box.
 
 ## Installation

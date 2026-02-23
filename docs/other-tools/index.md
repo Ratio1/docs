@@ -1,7 +1,7 @@
 ---
 title: Other Tools
 sidebar_position: 7
-description: introduction to other Ratio1 tools
+description: Introduction to other Ratio1 tools
 ---
 
 # Other Tools

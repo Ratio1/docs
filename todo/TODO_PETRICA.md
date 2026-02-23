@@ -36,9 +36,9 @@ Owner: Petrica (`P`) Source of truth for scope: `todo/README.md`
 - [x] `6.3.` Stats and Analytics - How to use the Explorer to view stats and
       analytics
 - [ ] `7.` Other Tools - introduction to other Ratio1 tools
-- [ ] `8.3.` Docs Template - the documentation site you are currently reading
-- [ ] `8.3.1.` How to Deeploy - deployment details of Docs Template
-- [ ] `8.3.2.` How to Develop - technical details of Docs Template
+- [x] `8.3.` Docs Template - the documentation site you are currently reading
+- [x] `8.3.1.` How to Deeploy - deployment details of Docs Template
+- [x] `8.3.2.` How to Develop - technical details of Docs Template
 - [ ] `10.` Partner Applications - open sourced template-ready partner
       applications built on Ratio1
 - [ ] `10.3.` ASPIRE - decentralized clinical management for various syndromes

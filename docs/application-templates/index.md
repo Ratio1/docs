@@ -1,7 +1,7 @@
 ---
 title: Application Templates
 sidebar_position: 8
-description: introduction to Ratio1 application templates
+description: Introduction to Ratio1 application templates & frameworks
 ---
 
 # Application Templates
