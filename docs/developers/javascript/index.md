@@ -113,7 +113,7 @@ Typical environment variables:
 Developer experience matters: before deploying, you can simulate and iterate
 locally with the Ratio1 Sandbox workflows.
 
-Read more in [The Sandbox](../the-sandbox).
+Read more in The [Sandbox section](../sandbox).
 
 ## Read more on each SDK component
 
