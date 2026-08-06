@@ -2,7 +2,7 @@ import React, {useCallback, useEffect, useRef, useState} from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import OriginalSearchBar from '@theme-original/SearchBar';
 
-export default function SearchBar(): JSX.Element {
+export default function SearchBar(): React.JSX.Element {
   const [open, setOpen] = useState(false);
   const modalRef = useRef<HTMLDivElement | null>(null);
   const {siteConfig} = useDocusaurusContext();

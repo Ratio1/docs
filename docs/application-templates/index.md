@@ -17,7 +17,7 @@ In this chapter, templates are organized as practical starting points with separ
 
 ## Main templates at a glance
 
-- **RedMesh Demo (flagship)**: cybersecurity-oriented template showing multi-component service behavior on decentralized edge runtime.
+- **RedMesh (flagship)**: native distributed security assessment across decentralized Edge Nodes.
 - **R1FS Demo**: storage-centered template for artifact flows and integration patterns around R1FS.
 - **Docs Template (this docs app)**: a practical template for documentation-style web delivery and Deeploy lifecycle walkthroughs.
 
@@ -36,7 +36,7 @@ In this chapter, templates are organized as practical starting points with separ
 
 ## In this section
 - [R1FS Demo](./r1fs-demo/)
-- [RedMesh Demo](./redmesh-demo/)
+- [RedMesh](./redmesh-demo/)
 - [Docs Template](./docs-template/)
 
 ## Ground truth references

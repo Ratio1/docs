@@ -1,7 +1,7 @@
 import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
-export default function ServedBy(): JSX.Element {
+export default function ServedBy(): React.JSX.Element {
 	const { siteConfig } = useDocusaurusContext();
 	const envHost =
 		(siteConfig?.customFields as { eeHostId?: string })?.eeHostId ?? "local";

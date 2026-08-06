@@ -5,7 +5,7 @@ import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle';
 import IconClose from '@theme/Icon/Close';
 import clsx from 'clsx';
 
-export default function NavbarMobileSidebarHeader(): JSX.Element {
+export default function NavbarMobileSidebarHeader(): React.JSX.Element {
   const mobileSidebar = useNavbarMobileSidebar();
 
   return (
