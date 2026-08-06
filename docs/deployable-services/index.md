@@ -68,5 +68,4 @@ Choose a [catalog service](./service-catalog) or start with [Your Native App on 
 
 - Reviewed on **August 6, 2026** against the current shared Deeploy job forms and schemas.
 - [Ratio1 Deeploy application](https://deeploy.ratio1.ai/)
-- [Ratio1 Deeploy source repository](https://github.com/Ratio1/deeploy-dapp)
 - [Worker App Runner: deploy without a separate CI/CD pipeline](https://ratio1.ai/blog/deploy-your-app-with-ratio1-s-worker-app-runner-no-ci-cd-required)

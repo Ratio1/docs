@@ -69,5 +69,5 @@ Continue to [How to Deeploy](./how-to-deeploy), then [How to Develop](./how-to-d
 ## Review and public sources
 
 - Reviewed on **August 6, 2026** against current Native App forms, schemas, and semaphore tests.
-- [Ratio1 Deeploy source repository](https://github.com/Ratio1/deeploy-dapp)
+- [Ratio1 Deeploy application](https://deeploy.ratio1.ai/)
 - [Ratio1 Edge Node repository](https://github.com/Ratio1/edge_node)

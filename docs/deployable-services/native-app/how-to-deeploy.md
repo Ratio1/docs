@@ -103,4 +103,3 @@ Ratio1](./).
 
 - Reviewed on **August 6, 2026** against current project/job forms, dynamic-environment serialization, tunnel behavior, and payment flow.
 - [Ratio1 Deeploy application](https://deeploy.ratio1.ai/)
-- [Ratio1 Deeploy source repository](https://github.com/Ratio1/deeploy-dapp)

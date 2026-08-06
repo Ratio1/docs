@@ -35,7 +35,7 @@ mapping. “Private only” means the template does not publish an application p
 | Moodle | Learning-management system | CAR | Public/private HTTP | Application and uploaded data | Database host/port/name/user/password plus initial admin username/password/email |
 | Matrix Synapse | Matrix homeserver | CAR | Public/private HTTP | Homeserver configuration/data | Public server name and anonymous-statistics choice |
 | OpenBao | Secrets and encryption management | CAR | Public/private HTTP | OpenBao data and logs | None at job creation; initialize and secure after deployment |
-| CockroachDB | Multi-node distributed SQL database | CAR | Public/private TCP | Per-node database data | Database name, application user, password, and at least two explicit target nodes |
+| CockroachDB | Multi-node distributed SQL database | CAR | Public TCP tunnel | Per-node database data | Database name, application user, password, and at least two explicit target nodes |
 | GitHub Runner | Self-hosted GitHub Actions runner | CAR | Private only | Runner work directory | Access token, repository/organization URL, scope, runner name, labels, and ephemeral choice |
 
 GitLab and EMQX are not active catalog entries and are intentionally omitted.
@@ -45,8 +45,9 @@ GitLab and EMQX are not active catalog entries and are intentionally omitted.
 1. Add a **Service** job to the project and choose the catalog entry.
 2. Select its service resource tier and validate target-node capacity. CockroachDB requires at least
    two manually selected targets; other services use their form's current targeting rules.
-3. Choose public or private exposure where a port exists. A public service requires a tunnel;
-   private mode creates a host-to-service port mapping.
+3. Choose public or private exposure where the service allows it. A public service requires a tunnel;
+   private mode creates a host-to-service port mapping. CockroachDB is the exception: its current
+   schema requires a separate client-facing TCP tunnel.
 4. Enter the required values. Deeploy can generate new secret-shaped inputs, but the operator remains
    responsible for secure storage and rotation.
 5. Review persistence, duration, cost, targets, and endpoint before adding the job draft and paying.
@@ -78,5 +79,4 @@ for custom plugin pipelines.
 
 - Reviewed on **August 6, 2026** against the active service entries and validation schemas in shared Deeploy `develop`.
 - [Ratio1 Deeploy application](https://deeploy.ratio1.ai/)
-- [Ratio1 Deeploy source repository](https://github.com/Ratio1/deeploy-dapp)
 - [Worker App Runner overview](https://ratio1.ai/blog/deploy-your-app-with-ratio1-s-worker-app-runner-no-ci-cd-required)

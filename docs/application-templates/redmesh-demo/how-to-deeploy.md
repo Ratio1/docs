@@ -127,4 +127,4 @@ Read [Develop RedMesh](./how-to-develop) for extension and report contracts, or 
 - Reviewed on **August 6, 2026** against `PENTESTER_API_01`, `REDMESH_LLM_AGENT_API`, and current Deeploy Native App behavior.
 - [Ratio1 RedMesh: Decentralized Distributed Cybersecurity](https://ratio1.ai/blog/ratio1-redmesh-decentralized-distributed-cybersecurity)
 - [Ratio1 Edge Node repository](https://github.com/Ratio1/edge_node)
-- [Ratio1 Deeploy source repository](https://github.com/Ratio1/deeploy-dapp)
+- [Ratio1 Deeploy application](https://deeploy.ratio1.ai/)

@@ -135,4 +135,4 @@ Read [Develop CerviGuard](./how-to-develop) for application and model contracts,
 - [SmartCloverAI CerviGuard repository](https://github.com/SmartCloverAI/CerviGuard)
 - [SmartCloverAI CerviGuardModels repository](https://github.com/SmartCloverAI/CerviGuardModels)
 - [Ratio1 Edge Node repository](https://github.com/Ratio1/edge_node)
-- [Ratio1 Deeploy source repository](https://github.com/Ratio1/deeploy-dapp)
+- [Ratio1 Deeploy application](https://deeploy.ratio1.ai/)

@@ -88,4 +88,4 @@ Hand the tested configuration contract to the operator and follow [How to Deeplo
 
 - Reviewed on **August 6, 2026** against current Edge Node plugin conventions and Deeploy Native App contracts.
 - [Ratio1 Edge Node repository](https://github.com/Ratio1/edge_node)
-- [Ratio1 Deeploy source repository](https://github.com/Ratio1/deeploy-dapp)
+- [Ratio1 Deeploy application](https://deeploy.ratio1.ai/)
