@@ -29,7 +29,6 @@ runtime context, and CLI-based fleet operations.
 - [Go](./go/)
 - [Sandbox](./sandbox/)
 - [r1ctl](./r1ctl/)
-- [Donation add-on for developers](./donation-add-on-for-developers)
 
 ## Ground truth references
 

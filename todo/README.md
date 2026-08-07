@@ -95,7 +95,6 @@ Each contributor workspace includes:
        5.5. [x] r1ctl - the kubectl for Ratio1 (AID)
        5.5.1. [x] r1ctl Overview - overview presentation with no details (AID)
        5.5.2. [x] r1ctl Features (AID)
-       5.6. Donation add-on for developers (Ale)
 
 6. The Explorer - short introduction to the Ratio1 Explorer (P)
    6.1. Nodes and Licenses - how to use the Explorer to view nodes and licenses (P)
@@ -121,14 +120,3 @@ Each contributor workspace includes:
    9.2. Your Native App on Ratio1 - guide to deploying your native app on Ratio1 (V)
    9.2.1. How to Deeploy - deployment details of Your Native App on Ratio1 (V)
    9.2.2. How to Develop - technical details of Your Native App on Ratio1 (V)
-
-10. Partner Applications - Open Sourced template-ready partner applications built on Ratio1 (P)
-    10.1. CerviGuard - decentralized cervical cancer screening application (V)
-    10.1.1. How to Deeploy - deployment details of CerviGuard (V)
-    10.1.2. How to Develop - technical details of CerviGuard (V)
-    10.2. DataGen - decentralized synthetic data generation application (Bleo)
-    10.2.1. How to Deeploy - deployment details of DataGen (Bleo)
-    10.2.2. How to Develop - technical details of DataGen (Bleo)
-    10.3. ASPIRE - decentralized clinical management for various syndromes (P)
-    10.3.1. How to Deeploy - deployment details of ASPIRE (P)
-    10.3.2. How to Develop - technical details of ASPIRE (P)

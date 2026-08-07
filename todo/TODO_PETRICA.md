@@ -40,12 +40,6 @@ Owner: Petrica (`P`) Source of truth for scope: `todo/README.md`
 - [x] `8.3.` Docs Template - the documentation site you are currently reading
 - [x] `8.3.1.` How to Deeploy - deployment details of Docs Template
 - [x] `8.3.2.` How to Develop - technical details of Docs Template
-- [x] `10.` Partner Applications - open sourced template-ready partner
-      applications built on Ratio1
-- [ ] `10.3.` ASPIRE - decentralized clinical management for various syndromes
-- [ ] `10.3.1.` How to Deeploy - deployment details of ASPIRE
-- [ ] `10.3.2.` How to Develop - technical details of ASPIRE
-
 ## QA per Section
 
 - [ ] Content checked against core Ratio1 resources in `AGENTS.md`

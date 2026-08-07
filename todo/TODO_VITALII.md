@@ -25,13 +25,8 @@ Source of truth for scope: `todo/README.md`
 - [ ] `9.2.` Your Native App on Ratio1 - guide to deploying your native app on Ratio1
 - [ ] `9.2.1.` How to Deeploy - deployment details of Your Native App on Ratio1
 - [ ] `9.2.2.` How to Develop - technical details of Your Native App on Ratio1
-- [ ] `10.1.` CerviGuard - decentralized cervical cancer screening application
-- [ ] `10.1.1.` How to Deeploy - deployment details of CerviGuard
-- [ ] `10.1.2.` How to Develop - technical details of CerviGuard
-
 ## QA per Section
 
 - [ ] Content checked against core Ratio1 resources in `AGENTS.md`
 - [ ] CRITIC pass completed and refinements applied
 - [ ] Links and examples validated
-
