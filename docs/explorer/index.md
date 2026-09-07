@@ -16,7 +16,6 @@ access to internal tools.
 
 Go to [explorer.ratio1.ai](https://explorer.ratio1.ai/).
 
----
 
 ## What you can view
 
@@ -28,7 +27,6 @@ Using the Explorer, you can:
 - view CSPs at **https://explorer.ratio1.ai/cloud-service-providers**
 - explore network statistics at **https://explorer.ratio1.ai/stats**
 
----
 
 ## Why it matters
 
@@ -40,7 +38,6 @@ growing and distributed globally.
 Use the Explorer whenever you need a real-time overview of the network or want
 to verify operational data.
 
----
 
 ## In this section
 
@@ -48,7 +45,6 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
----
 
 ## Notable date
 

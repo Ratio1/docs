@@ -1,7 +1,7 @@
 ---
 title: Navigating the Tutorials
 sidebar_position: 2
-description: list of tutorials and explanations
+description: List of tutorials and explanations
 ---
 
 # Navigating the Tutorials

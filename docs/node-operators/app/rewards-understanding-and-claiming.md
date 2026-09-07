@@ -12,7 +12,6 @@ description: Overview of reward types and how to earn and claim them on Ratio1
 - How rewards are allocated every epoch (**24 hours**)
 - How oracle verification and reward claiming work in practice
 
----
 
 ## Reward model overview
 
@@ -25,7 +24,6 @@ In Ratio1, rewards are allocated by epoch:
 - Both **Proof of Availability (PoA)** and **Proof of AI (PoAI)** are allocated
   each epoch based on oracle-verified node activity
 
----
 
 ## Reward types
 
@@ -48,7 +46,6 @@ In Ratio1, rewards are allocated by epoch:
 - PoAI rewards are paid by Cloud Service Providers (CSPs) through escrow smart
   contracts funded when jobs are deployed
 
----
 
 ## How epoch allocation works
 
@@ -61,7 +58,6 @@ In Ratio1, rewards are allocated by epoch:
 In short: oracles are the verification layer that confirms real node
 contribution before rewards are allocated.
 
----
 
 ## Claim your rewards
 
@@ -78,7 +74,6 @@ contribution before rewards are allocated.
 After confirmation, claimed rewards are minted (PoA)/transferred (PoAI) to
 your wallet according to protocol rules.
 
----
 
 ## Notable date
 

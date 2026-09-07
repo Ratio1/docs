@@ -22,7 +22,6 @@ entirely by the protocol: availability and work are continuously verified,
 rewards are calculated transparently, and incentives are aligned with real
 network contribution.
 
----
 
 As a node operator, you:
 
@@ -65,7 +64,6 @@ list to reflect the most current regulatory requirements.
 This section guides you through everything required to operate nodes
 effectively, from initial setup to day-to-day management.
 
----
 
 ## In this section
 
@@ -73,7 +71,6 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
----
 
 ## Notable date
 

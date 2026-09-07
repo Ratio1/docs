@@ -1,7 +1,7 @@
 ---
 title: Sandbox
 sidebar_position: 1
-description: using the Ratio1 Plugins Sandbox for testing and development
+description: Using the Ratio1 Plugins Sandbox for testing and development
 ---
 
 # Sandbox

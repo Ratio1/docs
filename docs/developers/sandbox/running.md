@@ -1,7 +1,7 @@
 ---
 title: Running the sandbox
 sidebar_position: 2
-description: how to start and configure the Ratio1 Plugins Sandbox
+description: How to start and configure the Ratio1 Plugins Sandbox
 ---
 
 # Running the sandbox

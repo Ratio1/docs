@@ -1,7 +1,7 @@
 ---
 title: Simple auth
 sidebar_position: 5
-description: using SDK simple auth with the JavaScript SDK for TypeScript and JavaScript
+description: Using SDK simple auth with the JavaScript SDK for TypeScript and JavaScript
 ---
 
 # Simple auth
@@ -184,7 +184,6 @@ Throws (common):
 - `EnvVarMissingError` if required env values are missing;
 - `AuthInitError` if called before internal config is ready.
 
----
 
 ### `simple.createUser()`
 
@@ -234,7 +233,6 @@ Throws (common):
 - `InvalidUsernameError`, `InvalidPasswordError`, `InvalidUserRoleError`;
 - `UserSerializationError` for invalid/non-serializable record payloads.
 
----
 
 ### `simple.authenticate()`
 
@@ -267,7 +265,6 @@ Security behavior:
 
 - invalid credentials are intentionally normalized to the same error path, reducing credential probing detail.
 
----
 
 ### `simple.getUser()`
 

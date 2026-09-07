@@ -14,7 +14,6 @@ description: Learn how to link or unlink your license to your Edge Node
 - How to change the linked node ETH address in the app
 - How to unlink a node from a license in the app
 
----
 
 ## Before you link
 
@@ -28,7 +27,6 @@ Install guide:
 
 - [Node Launcher Quick Setup](../node-launcher/node-launcher-quick-setup)
 
----
 
 ## Why linking is required
 
@@ -36,7 +34,6 @@ A running node is not enough by itself.
 For a node to be allowed to participate in the Ratio1 network, it must have a
 License linked to its ETH address.
 
----
 
 ## Link your license to your node
 
@@ -52,7 +49,6 @@ License linked to its ETH address.
 After the transaction is confirmed, that license is linked to the node address
 you provided. ![Linked License](../img/10.jpg)
 
----
 
 ## Unlink your node from your license
 
@@ -81,7 +77,6 @@ period applies before another node can be linked to that license.
 Claim your rewards before you unlink or change a node.
 :::
 
----
 
 ## Notable date
 

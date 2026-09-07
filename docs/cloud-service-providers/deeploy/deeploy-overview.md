@@ -13,7 +13,6 @@ CSPs. It is designed to let operators deploy and manage applications on Ratio1
 infrastructure while keeping deployment logic auditable and payment flows
 trust-minimized.
 
----
 
 ## How deployment works at a high level
 
@@ -25,7 +24,6 @@ trust-minimized.
 4. Oracle consensus confirms placement and execution rights.
 5. The workload is started and then managed through Deeploy controls.
 
----
 
 ## Core concepts you will use
 
@@ -36,7 +34,6 @@ trust-minimized.
 - `Escrow`: funds are approved and locked in a smart contract before execution
   to reduce payment risk for providers.
 
----
 
 ## Where Container App Runner fits
 
@@ -47,7 +44,6 @@ environments with explicit runtime/network/resource controls.
 In practice, CAR is the better fit for teams that already package services with
 their own build pipeline and only need orchestration and operations on Ratio1.
 
----
 
 ## Where Worker App Runner fits
 
@@ -55,7 +51,6 @@ Worker App Runner is the fastest entry point inside Deeploy for Git-based app
 deployments. It removes the need to manage CI/CD pipelines for common cases: you
 connect a repository, set runtime parameters, then deploy from the Deeploy UI.
 
----
 
 ## Notable date
 

@@ -10,7 +10,6 @@ This site is built from an open-source repository containing a customized **Docu
 
 Repository: https://github.com/Ratio1/docs
 
----
 
 Special thanks to **Docusaurus** (https://docusaurus.io/) for the initial framework we built upon.
 

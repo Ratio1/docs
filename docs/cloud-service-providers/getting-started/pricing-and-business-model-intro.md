@@ -71,7 +71,6 @@ In practice:
 - CSPs freely define their client pricing and margins  
 - protocol pricing aims to balance fairness, sustainability, and competitiveness  
 
----
 
 ## Notable date
 

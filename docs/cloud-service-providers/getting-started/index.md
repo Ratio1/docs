@@ -37,7 +37,6 @@ At a high level, the lifecycle of a CSP deployment looks like this:
    - A protocol burn is applied automatically (15% of the onchain job price) 
    - All settlement happens transparently onchain  
 
----
 
 ## Why become a Ratio1 CSP?
 
@@ -64,7 +63,6 @@ Deployments automatically benefit from:
 - distributed orchestration  
 - uptime monitoring via oracles  
 
----
 
 ## Requirements to become a CSP
 
@@ -77,7 +75,6 @@ To operate as a CSP you must:
 
 Once approved, you will gain access to the Deeploy application and CSP tooling.
 
----
 
 ## Continue with
 
@@ -85,7 +82,6 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
----
 
 ## Notable date
 

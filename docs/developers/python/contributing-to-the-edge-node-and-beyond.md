@@ -1,7 +1,7 @@
 ---
 title: Contributing to the Edge Node and Beyond
 sidebar_position: 5
-description: how to contribute to the project
+description: How to contribute to the project
 ---
 
 # Contributing to the Edge Node and Beyond

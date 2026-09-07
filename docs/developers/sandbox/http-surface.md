@@ -1,7 +1,7 @@
 ---
 title: HTTP surface
 sidebar_position: 4
-description: endpoints exposed by the sandbox and what they do
+description: Endpoints exposed by the sandbox and what they do
 ---
 
 # HTTP surface

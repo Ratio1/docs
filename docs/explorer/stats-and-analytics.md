@@ -13,7 +13,6 @@ The **Stats and Analytics** page is:
 Use it for executive monitoring, adoption tracking, and trend validation across
 the network.
 
----
 
 ## Live dashboard structure
 
@@ -22,7 +21,6 @@ activity changes.
 
 The sections below match what is displayed on the page.
 
----
 
 ### Token
 
@@ -33,7 +31,6 @@ The Token section provides a live overview of supply dynamics, including:
 - Max. Theoretical Supply
 - Burned
 
----
 
 ### PoAI
 
@@ -44,7 +41,6 @@ The PoAI section tracks CSP-funded workload economics and activity:
 - Daily PoAI Rewards (`$USDC`)
 - Daily PoAI Burn (`$R1`)
 
----
 
 ### Adoption
 
@@ -58,7 +54,6 @@ This chart is important for understanding the **claiming limits for MND
 allocation**, because the claimable portion is tied to network adoption
 progress.
 
----
 
 ### Treasury Wallets
 
@@ -75,7 +70,6 @@ You can use this section to compare treasury allocation, mining progress, and
 transfer behavior across treasury buckets (for example Grants, LP, CSR,
 Expenses, Marketing, and VAT).
 
----
 
 ### Nodes (geography and compliance)
 
@@ -89,13 +83,11 @@ Nodes geography table fields:
 Use this section to understand node distribution by country, data-center share,
 and KYC/KYB composition.
 
----
 
 :::note Further features
 More data panels and charts will be added over time as
 the Ratio1 network evolves. :::
 
----
 
 ## Notable date
 

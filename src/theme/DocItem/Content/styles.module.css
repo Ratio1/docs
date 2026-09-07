@@ -19,6 +19,18 @@
   display: block;
 }
 
+.content :global(h2) {
+  margin-top: 2.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.content :global(h2:first-of-type) {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
 .hasContentTitle .content :global(h1:first-of-type) {
   display: none;
 }

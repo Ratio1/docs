@@ -1,7 +1,7 @@
 ---
 title: r1ctl
 sidebar_position: 5
-description: the kubectl for Ratio1
+description: The kubectl for Ratio1
 ---
 
 # r1ctl

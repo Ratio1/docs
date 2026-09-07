@@ -18,7 +18,6 @@ license ownership, but once onboarded, all computation, orchestration, and
 rewards are enforced by cryptography, smart contracts, and distributed
 consensus - not by a central authority.
 
----
 
 ## TL;DR
 
@@ -27,7 +26,6 @@ registration, KYC/KYB, and license ownership** to ensure accountability, data
 safety, and network integrity - while all ongoing operations remain trustless
 and decentralized.
 
----
 
 ## What this covers
 
@@ -37,7 +35,6 @@ and decentralized.
 - How to complete email registration and KYC/KYB
 - What verification enables once you’re inside the protocol
 
----
 
 ## Permissioned entry, trustless execution
 
@@ -60,7 +57,6 @@ Instead:
 
 In short: **identity is permissioned - execution is trustless**.
 
----
 
 ## Email registration & KYC/KYB process
 
@@ -77,7 +73,6 @@ are mandatory for:
    **https://app.ratio1.ai**
 2. Connect your wallet (e.g. MetaMask)
 
----
 
 ### Step 2: Register your email
 
@@ -92,7 +87,6 @@ Your email is used for:
 - License purchase invoices
 - Protocol updates and node-running notifications (recommended)
 
----
 
 ### Step 3: Complete KYC or KYB
 
@@ -120,7 +114,6 @@ Think of Ratio1 compute providers not as anonymous miners, but as **licensed
 operators in a decentralized infrastructure** - coordinated by protocol rules
 instead of contracts, accounts, or centralized cloud providers.
 
----
 
 ## Notable date
 

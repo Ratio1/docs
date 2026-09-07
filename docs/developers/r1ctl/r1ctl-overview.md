@@ -1,7 +1,7 @@
 ---
 title: r1ctl Overview
 sidebar_position: 1
-description: command-line operational model and usage scope
+description: Command-line operational model and usage scope
 ---
 
 # r1ctl Overview

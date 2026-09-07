@@ -8,7 +8,6 @@ description: Steps to become a CSP on Ratio1
 
 Anyone can become a Cloud Service Provider (CSP) on Ratio1 provided they meet the basic licensing and verification requirements and are approved by the Ratio1 team. CSPs operate deployments for clients using the Ratio1 network and gain access to the Deeploy application and CSP tooling.
 
----
 
 ## Requirements to become a CSP
 
@@ -23,13 +22,11 @@ All CSP applications are subject to review and approval by the Ratio1 team.
 
 Once approved, you will gain access to the Deeploy application and CSP tooling.
 
----
 
 ## Eligibility
 
 Any user or organization that owns at least **one valid Ratio1 license** and successfully completes the required verification process can apply to become a CSP. Final activation is granted after manual verification by the Ratio1 team.
 
----
 
 ## How to apply
 
@@ -44,7 +41,6 @@ Include:
 
 The Ratio1 team will review your request and guide you through the remaining setup steps.
 
----
 
 ## Oracle node rewards
 
@@ -57,13 +53,11 @@ Oracle nodes:
 
 PoAI rewards are distributed only to nodes actively running deployed workloads.
 
----
 
 :::note Note
 The CSP onboarding process, requirements, and activation method may evolve over time as the Ratio1 network and tooling develop. Always refer to the latest documentation or guidance from the Ratio1 team when applying.
 :::
 
----
 
 ## Notable date
 

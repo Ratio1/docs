@@ -1,7 +1,7 @@
 ---
 title: CStore Integration
 sidebar_position: 3
-description: using CStore with the JavaScript SDK for TypeScript and JavaScript
+description: Using CStore with the JavaScript SDK for TypeScript and JavaScript
 ---
 
 # CStore Integration

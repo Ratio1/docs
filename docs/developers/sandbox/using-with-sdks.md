@@ -1,7 +1,7 @@
 ---
 title: Using with SDKs
 sidebar_position: 5
-description: configure SDKs to target the sandbox instead of a live node
+description: Configure SDKs to target the sandbox instead of a live node
 ---
 
 # Using with SDKs

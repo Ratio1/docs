@@ -20,7 +20,6 @@ A Node Deed license is required for an edge node to participate in the Ratio1
 protocol and earn R1 rewards from **PoA (Proof of Availability - rewards for
 node availability)** and **PoAI (Proof of AI - rewards for executing jobs)**.
 
----
 
 ## Understanding the R1 token
 
@@ -41,7 +40,6 @@ licenses.
 If your wallet does not contain sufficient R1 or Base Ethereum for gas, the
 purchase cannot be completed.
 
----
 
 ## Getting R1 tokens
 
@@ -65,7 +63,6 @@ You can purchase R1 directly from the Ratio1 app.
 
 After confirmation, the R1 tokens will appear in your wallet balance.
 
----
 
 ### Option B - Buy R1 on Uniswap
 
@@ -81,7 +78,6 @@ Uniswap**.
 
 Once completed, verify that your R1 balance has updated in your wallet.
 
----
 
 ## Buying a Node Deed license
 
@@ -106,7 +102,6 @@ The dashboard displays:
 After confirmation, your licenses will appear in the **Licenses & Nodes**
 section of the app.
 
----
 
 ## After purchasing
 
@@ -114,7 +109,6 @@ Once purchased, your Node Deed license is stored in your wallet and is visible
 in the **Licenses & Nodes** section. From this section, you can manage your
 licenses and link them to your running nodes to activate them.
 
----
 
 ## Notable date
 

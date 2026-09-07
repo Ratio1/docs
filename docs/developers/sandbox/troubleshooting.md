@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting
 sidebar_position: 6
-description: common issues and how to debug the sandbox
+description: Common issues and how to debug the sandbox
 ---
 
 # Troubleshooting

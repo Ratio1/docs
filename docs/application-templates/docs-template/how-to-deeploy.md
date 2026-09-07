@@ -1,14 +1,13 @@
 ---
 title: How to Deeploy
 sidebar_position: 1
-description: deployment details of Docs Template
+description: Deployment details of Docs Template
 ---
 
 # How to Deeploy
 
 For Deeploy, use the docs template as a static-site workload and run the standard worker command sequence.
 
----
 
 ## Worker commands for Deeploy
 
@@ -18,7 +17,6 @@ npm run build
 npm run serve
 ```
 
----
 
 ## What each command does
 
@@ -26,13 +24,11 @@ npm run serve
 - `npm run build`: builds the static docs site into `build/`.
 - `npm run serve`: serves the static output for edge deployment runtime.
 
----
 
 ## Container deployment guidance (optional)
 
 If your deployment workflow requires a container image, package the static `build/` output in a runtime image and deploy that artifact.
 
----
 
 ### Example Dockerfile
 
@@ -52,7 +48,6 @@ EXPOSE 3000
 CMD ["serve", "-s", "build", "-l", "3000"]
 ```
 
----
 
 ### Validate the container locally
 
@@ -61,7 +56,6 @@ docker build -t ratio1-docs:local .
 docker run --rm -p 3000:3000 ratio1-docs:local
 ```
 
----
 
 ### Use with Deeploy
 
@@ -69,13 +63,11 @@ docker run --rm -p 3000:3000 ratio1-docs:local
 2. Set the image reference in your Deeploy deployment configuration.
 3. Use container port `3000` as the exposed service port.
 
----
 
 ## Deployment target
 
 This template is designed specifically for deployment on Ratio1 edge nodes.
 
----
 
 ## Notable date
 - Reviewed on **February 23, 2026**.

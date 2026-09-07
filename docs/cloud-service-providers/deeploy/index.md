@@ -14,7 +14,6 @@ identity, escrowed payments, and oracle-coordinated scheduling.
 Use this section to move from onboarding and first deployment to day-2
 operations for production workloads.
 
----
 
 ## In this section
 
@@ -22,7 +21,6 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
----
 
 ## Notable date
 

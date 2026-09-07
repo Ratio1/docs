@@ -15,7 +15,6 @@ different list pages:
 This guide covers both list pages and how they map to a shared entity detail
 page.
 
----
 
 ## Node Operators view
 
@@ -28,7 +27,6 @@ fields include:
 Use this list to understand node distribution across entities and the businesses
 that run node operating services.
 
----
 
 ## CSPs view
 
@@ -44,7 +42,6 @@ Use this list to compare CSP scale and current network usage.
 
 Entries from the CSP list also open the same shared detail page.
 
----
 
 ## Shared entity detail page
 
@@ -70,7 +67,6 @@ lists and both entries resolve to the same underlying profile page.
 Use this page when you need to evaluate a specific entity's operational
 reliability and network contribution.
 
----
 
 ## Notable date
 

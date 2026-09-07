@@ -1,7 +1,7 @@
 ---
 title: CStore Integration
 sidebar_position: 3
-description: using CStore with the Go SDK
+description: Using CStore with the Go SDK
 ---
 
 # CStore Integration

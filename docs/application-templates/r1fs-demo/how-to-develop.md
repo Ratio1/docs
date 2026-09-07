@@ -1,7 +1,7 @@
 ---
 title: How to Develop
 sidebar_position: 2
-description: technical details of R1FS Demo
+description: Technical details of R1FS Demo
 ---
 
 # How to Develop

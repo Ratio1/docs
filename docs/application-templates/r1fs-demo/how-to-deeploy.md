@@ -1,7 +1,7 @@
 ---
 title: How to Deeploy
 sidebar_position: 1
-description: deployment details of R1FS Demo
+description: Deployment details of R1FS Demo
 ---
 
 # How to Deeploy

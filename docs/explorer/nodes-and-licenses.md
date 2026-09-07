@@ -20,7 +20,6 @@ Use it to answer questions like:
 - What is the economic state of a license (ownership, allocated supply,
   claimable rewards)?
 
----
 
 ## Nodes page
 
@@ -36,7 +35,6 @@ The Nodes page lists all nodes and their core operational data, including:
 
 Use this page for fast filtering and to find a specific node.
 
----
 
 ### Node detail view
 
@@ -66,7 +64,6 @@ The Licenses page lists all licenses and their core data, including:
 
 Use this page for a fast overview of licensed capacity distribution.
 
----
 
 ### License detail view
 
@@ -80,7 +77,6 @@ detail page, where you can inspect license economics such as:
 Use this view to evaluate the financial state of a license and track reward
 flows over time.
 
----
 
 ## Notable date
 

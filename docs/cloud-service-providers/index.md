@@ -12,7 +12,6 @@ This operating model can be viewed as similar to a franchise-style approach: CSP
 
 In this section, you will learn how to become a CSP, understand the basic pricing and operating model, and use Deeploy to deploy and manage workloads on the Ratio1 network.
 
----
 
 ## In this section
 
@@ -20,7 +19,6 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
----
 
 ## Notable date
 

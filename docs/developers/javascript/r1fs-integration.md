@@ -1,7 +1,7 @@
 ---
 title: R1FS Integration
 sidebar_position: 4
-description: using R1FS with the JavaScript SDK for TypeScript and JavaScript
+description: Using R1FS with the JavaScript SDK for TypeScript and JavaScript
 ---
 
 # R1FS Integration

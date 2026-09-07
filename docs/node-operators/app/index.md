@@ -15,7 +15,6 @@ If you’re new to Ratio1, start here. This section walks you through the minimu
 steps required to become an active, verified operator and begin earning on
 Mainnet.
 
----
 
 ## What this covers
 
@@ -25,7 +24,6 @@ Mainnet.
 - Understanding and claiming rewards
 - Transferring or selling licenses when needed
 
----
 
 ## In this section
 
@@ -33,7 +31,6 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
----
 
 ## Notable date
 

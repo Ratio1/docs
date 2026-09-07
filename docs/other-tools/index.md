@@ -11,7 +11,6 @@ description:
 This section includes a series of tools designed to simplify the experience for
 Node Operators, Cloud Service Providers, and users of the Ratio1 protocol.
 
----
 
 ## In this section
 
@@ -19,7 +18,6 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
----
 
 ## Notable date
 

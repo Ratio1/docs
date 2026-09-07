@@ -13,7 +13,6 @@ description: Learn who can sell, buy, or transfer licenses and how the process w
 - What the current owner must do before transfer
 - What the new owner must complete before using the license
 
----
 
 ## Who can sell, buy, or transfer
 
@@ -22,7 +21,6 @@ description: Learn who can sell, buy, or transfer licenses and how the process w
 - Ownership transfer is allowed both directly and via decentralized NFT
   marketplaces.
 
----
 
 ## How transfers work
 
@@ -34,7 +32,6 @@ Licenses can change ownership in two ways:
 
 In both cases, the onchain owner changes to the receiving wallet.
 
----
 
 ## Before selling or transferring (current owner checklist)
 
@@ -47,7 +44,6 @@ Before you send a license or list it for sale:
 Always claim rewards and unlink the node before transferring ownership or listing the license on a decentralized NFT marketplace. If you don’t, the transfer transaction will fail. The listing for sale may succeed, but the purchase will not go through.
 :::
 
----
 
 ## After buying or receiving (new owner checklist)
 
@@ -62,13 +58,11 @@ The new owner must still:
 Only after eligibility checks and KYC/KYB can the new owner link the license to
 a node and use it in the Ratio1 protocol.
 
----
 
 ## Key rule to remember
 
 Ownership transfer is permissionless, but protocol usage is compliance-gated.
 
----
 
 ## Notable date
 

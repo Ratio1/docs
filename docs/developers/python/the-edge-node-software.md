@@ -1,7 +1,7 @@
 ---
 title: The Edge Node Software
 sidebar_position: 4
-description: understanding the edge node software architecture
+description: Understanding the edge node software architecture
 ---
 
 # The Edge Node Software

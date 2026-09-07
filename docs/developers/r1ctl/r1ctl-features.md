@@ -1,7 +1,7 @@
 ---
 title: r1ctl Features
 sidebar_position: 2
-description: command groups, examples, and operational guardrails
+description: Command groups, examples, and operational guardrails
 ---
 
 # r1ctl Features

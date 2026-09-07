@@ -1,7 +1,7 @@
 ---
 title: R1FS Integration
 sidebar_position: 4
-description: using R1FS with the Go SDK
+description: Using R1FS with the Go SDK
 ---
 
 # R1FS Integration

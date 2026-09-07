@@ -1,7 +1,7 @@
 ---
 title: For Developers
 sidebar_position: 5
-description: introduction to developing on Ratio1
+description: Introduction to developing on Ratio1
 ---
 
 # For Developers

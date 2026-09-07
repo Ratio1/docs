@@ -1,7 +1,7 @@
 ---
 title: API Quick Reference
 sidebar_position: 3
-description: detailed API documentation
+description: Detailed API documentation
 ---
 
 # API Quick Reference

@@ -1,14 +1,13 @@
 ---
 title: How to Develop
 sidebar_position: 2
-description: technical details of Docs Template
+description: Technical details of Docs Template
 ---
 
 # How to Develop
 
 This template follows the standard Docusaurus local workflow, with Ratio1-specific UI/runtime customizations already integrated.
 
----
 
 ## Installation
 
@@ -16,7 +15,6 @@ This template follows the standard Docusaurus local workflow, with Ratio1-specif
 npm install
 ```
 
----
 
 ## Local development
 
@@ -26,7 +24,6 @@ npm run start
 
 This starts a local development server with live reload for documentation changes.
 
----
 
 ## Build
 
@@ -36,7 +33,6 @@ npm run build
 
 This generates the static site in `build/`.
 
----
 
 ## Preview a production build
 
@@ -47,7 +43,6 @@ npm run serve
 
 This serves the static output from `build/` so you can validate the production bundle locally.
 
----
 
 ## Notable date
 - Reviewed on **February 23, 2026**.

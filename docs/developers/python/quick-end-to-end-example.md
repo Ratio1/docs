@@ -1,7 +1,7 @@
 ---
 title: Quick end-to-end example
 sidebar_position: 1
-description: a complete example of using the Python SDK
+description: A complete example of using the Python SDK
 ---
 
 # Quick end-to-end example

@@ -1,7 +1,7 @@
 ---
 title: R1FS Demo
 sidebar_position: 1
-description: js/ts demo application for R1FS
+description: Js/ts demo application for R1FS
 ---
 
 # R1FS Demo

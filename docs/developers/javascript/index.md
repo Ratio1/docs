@@ -1,7 +1,7 @@
 ---
 title: JavaScript
 sidebar_position: 2
-description: using the JavaScript SDK for TypeScript and JavaScript on Ratio1
+description: Using the JavaScript SDK for TypeScript and JavaScript on Ratio1
 ---
 
 # JavaScript

@@ -1,7 +1,7 @@
 ---
 title: Quick end-to-end example
 sidebar_position: 1
-description: a complete example of using the JavaScript SDK for TypeScript and JavaScript
+description: A complete example of using the JavaScript SDK for TypeScript and JavaScript
 ---
 
 # Quick end-to-end example

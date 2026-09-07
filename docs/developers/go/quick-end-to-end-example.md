@@ -1,7 +1,7 @@
 ---
 title: Quick end-to-end example
 sidebar_position: 1
-description: a complete example of using the Go SDK
+description: A complete example of using the Go SDK
 ---
 
 # Quick end-to-end example

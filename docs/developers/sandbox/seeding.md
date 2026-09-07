@@ -1,7 +1,7 @@
 ---
 title: Seeding data
 sidebar_position: 3
-description: start the sandbox with a predictable dataset for repeatable tests
+description: Start the sandbox with a predictable dataset for repeatable tests
 ---
 
 # Seeding data

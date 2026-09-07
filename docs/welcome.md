@@ -31,7 +31,6 @@ alternative to traditional cloud platforms. It enables lower costs, edge-first
 availability, strong privacy guarantees, and new economic models for AI - where
 compute providers are rewarded directly for real availability and useful work.
 
----
 
 ## What this covers
 
@@ -43,7 +42,6 @@ compute providers are rewarded directly for real availability and useful work.
 This documentation can be read end-to-end or used as a reference. Start with the
 fundamentals, then dive deeper as needed.
 
----
 
 ## Notable date
 

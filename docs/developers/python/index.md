@@ -1,7 +1,7 @@
 ---
 title: Python
 sidebar_position: 1
-description: using the Python SDK for Ratio1
+description: Using the Python SDK for Ratio1
 ---
 
 # Python
