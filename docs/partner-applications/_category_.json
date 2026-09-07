@@ -1,0 +1,8 @@
+{
+  "label": "Partner Applications",
+  "position": 10,
+  "link": {
+    "type": "doc",
+    "id": "partner-applications/index"
+  }
+}
