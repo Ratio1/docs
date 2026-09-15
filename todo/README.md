@@ -120,6 +120,10 @@ Each contributor workspace includes:
    9.2. [x] Your Native App on Ratio1 - guide to deploying your Native App on Ratio1 (V)
    9.2.1. [x] How to Deeploy - deployment details of Your Native App on Ratio1 (V)
    9.2.2. [x] How to Develop - technical details of Your Native App on Ratio1 (V)
+   9.3. [x] R1 MeshDB - distributed SQL databases for applications (Bleo)
+   9.3.1. [x] How to Deeploy R1 MeshDB - fresh cluster setup and verification (Bleo)
+   9.3.2. [x] Use the Dashboard - console login, tables, and SQL (Bleo)
+   9.3.3. [x] Create and Use Databases - SQL example, application login, and TLS clients (Bleo)
 
 10. Partner Applications - Open Sourced template-ready partner applications built on Ratio1 (P)
     10.1. [x] CerviGuard - clinical decision-support pilot on Ratio1 (V)
