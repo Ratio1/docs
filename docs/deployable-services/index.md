@@ -41,6 +41,7 @@ when an image is already tested, immutable, and controlled through an image-rele
 ## In this section
 
 - Browse the active [Service Catalog](./service-catalog).
+- Deploy [R1 MeshDB](./r1-meshdb/), use its console, and create databases for your applications.
 - Learn the [Native App](./native-app/) pipeline and plugin model.
 - Follow [How to Deeploy a Native App](./native-app/how-to-deeploy) for the current UI flow.
 - Use [How to Develop a Native App](./native-app/how-to-develop) for plugin contracts.

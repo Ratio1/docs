@@ -35,7 +35,7 @@ mapping. “Private only” means the template does not publish an application p
 | Moodle | Learning-management system | CAR | Public/private HTTP | Application and uploaded data | Database host/port/name/user/password plus initial admin username/password/email |
 | Matrix Synapse | Matrix homeserver | CAR | Public/private HTTP | Homeserver configuration/data | Public server name and anonymous-statistics choice |
 | OpenBao | Secrets and encryption management | CAR | Public/private HTTP | OpenBao data and logs | None at job creation; initialize and secure after deployment |
-| CockroachDB | Multi-node distributed SQL database | CAR | Public TCP tunnel | Per-node database data | Database name, application user, password, and at least two explicit target nodes |
+| [R1 MeshDB](./r1-meshdb/) | Multi-node distributed SQL database | CAR | Public SQL TCP tunnel and HTTPS console | Per-node database data | Database name, database user, password, and at least three distinct explicit target nodes |
 | GitHub Runner | Self-hosted GitHub Actions runner | CAR | Private only | Runner work directory | Access token, repository/organization URL, scope, runner name, labels, and ephemeral choice |
 
 GitLab and EMQX are not active catalog entries and are intentionally omitted.
@@ -43,10 +43,10 @@ GitLab and EMQX are not active catalog entries and are intentionally omitted.
 ## Deployment procedure
 
 1. Add a **Service** job to the project and choose the catalog entry.
-2. Select its service resource tier and validate target-node capacity. CockroachDB requires at least
-   two manually selected targets; other services use their form's current targeting rules.
+2. Select its service resource tier and validate target-node capacity. R1 MeshDB requires at least
+   three distinct manually selected targets; other services use their form's current targeting rules.
 3. Choose public or private exposure where the service allows it. A public service requires a tunnel;
-   private mode creates a host-to-service port mapping. CockroachDB is the exception: its current
+   private mode creates a host-to-service port mapping. R1 MeshDB is the exception: its current
    schema requires a separate client-facing TCP tunnel.
 4. Enter the required values. Deeploy can generate new secret-shaped inputs, but the operator remains
    responsible for secure storage and rotation.
@@ -67,7 +67,7 @@ Then use the service's own health or client check with a least-privileged accoun
   not a secure default credential.
 - Scope GitHub runner tokens to the intended repository or organization and prefer ephemeral runners
   for untrusted workloads.
-- Treat CockroachDB clock health, node count, and target selection as cluster requirements, not UI
+- Treat R1 MeshDB clock health, node count, and target selection as cluster requirements, not UI
   decoration.
 
 ## Next steps
@@ -78,5 +78,6 @@ for custom plugin pipelines.
 ## Review and public sources
 
 - Reviewed on **August 6, 2026** against the active service entries and validation schemas in shared Deeploy `develop`.
+- MeshDB entry updated on **September 15, 2026**; see the [MeshDB guide and sources](./r1-meshdb/).
 - [Ratio1 Deeploy application](https://deeploy.ratio1.ai/)
 - [Worker App Runner overview](https://ratio1.ai/blog/deploy-your-app-with-ratio1-s-worker-app-runner-no-ci-cd-required)

@@ -1,0 +1,8 @@
+{
+  "label": "R1 MeshDB",
+  "position": 3,
+  "link": {
+    "type": "doc",
+    "id": "deployable-services/r1-meshdb/index"
+  }
+}

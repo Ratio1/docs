@@ -106,6 +106,8 @@ For existing application templates and frameworks (articles):
 For existing application templates and frameworks (repositories):
 - https://github.com/Ratio1/RedMesh-Navigator
 - https://github.com/Ratio1/r1fs-demo
+- https://github.com/Ratio1/r1-meshdb - MeshDB runtime, console, SQL permissions, and release contract.
+- https://github.com/Ratio1/deeploy-dapp - current deployment forms, service definitions, and job controls.
 
 3rd-party production grade apps developed on Ratio1:
 - https://github.com/SmartCloverAI/CerviGuard
