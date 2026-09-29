@@ -1,179 +1,115 @@
 ---
 title: Create and Use Databases
 sidebar_position: 3
-description: Create an example shop database, store orders, and connect an application with limited permissions.
+description: Create a database and table in the R1DB Console, then connect an application with limited access.
 ---
 
 # Create and Use Databases
 
-Your deployment already created `appdb` (or the name you entered). Use it for
-your application, or create another database to organize a different workload.
-This optional walkthrough creates `shop` for orders. A CRM could instead use
-`crm` for contacts; a device application could use `telemetry` for readings.
+Your deployment already has an initial database, usually `appdb`. This
+walkthrough creates a separate `shop` database and an `orders` table, then
+gives an application user access to that table. A new database shares the
+existing cluster's nodes and capacity; it is not another Deeploy job.
 
-Sign in to [the console](./dashboard) as your configured database user, such as
-`app_user`, with **Database** set to `appdb` (or your chosen initial name).
-For steps 1 and 2, run each SQL block
-separately in **SQL**, using **Run query** each time. Steps 3 and 4 use a SQL client
-because the console does not support creating users or changing passwords.
+Sign in to [the R1DB Console](./dashboard) as the configured database user,
+usually `app_user`, with **Database** set to the initial database. This user
+has cluster-wide administrator access in current R1DB deployments. Keep its
+password for administration, not for application connections.
 
-## 1. Create a database
+## Create a database
 
-```sql
-CREATE DATABASE shop;
-```
+1. Open **Manage** and select **Databases**.
+2. Enter `shop` and create the database.
+3. Check that **Database** in the top bar now shows `shop`.
 
-Verify it exists:
+If `shop` already exists, inspect it or choose another name. Do not delete an
+existing database merely to repeat this example. The console's **SQL** page
+does not accept `CREATE DATABASE`; use **Manage** or a SQL client.
 
-```sql
-SHOW DATABASES;
-```
+## Create a table and add data
 
-You should see `shop`. If the name already exists, choose a different example
-name or inspect the existing database; do not delete it to repeat the tutorial.
-This creates a database in the existing cluster, not a new Deeploy job.
+Open **Tables**, click **New table**, and name it `orders` in the `public`
+schema. Keep the form's generated `id` column (`UUID` primary key with
+`gen_random_uuid()` as its default). Add these required columns:
 
-## 2. Add a table and a row
+| Column | Type | Nullable |
+|---|---|---|
+| `customer_email` | `STRING` | No |
+| `total` | `DECIMAL` | No |
+| `status` | `STRING` | No |
 
-Create a schema named `app` to group your tables and manage access. Using a
-schema owned by your user lets you grant access without needing `root`:
-
-```sql
-CREATE SCHEMA shop.app;
-```
-
-`shop.app.orders` names the database, schema, and table:
+Create the table, then open **SQL**. Run each statement separately with
+**Run query**:
 
 ```sql
-CREATE TABLE shop.app.orders (
-  order_id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  customer_email STRING NOT NULL,
-  total DECIMAL(12, 2) NOT NULL,
-  status STRING NOT NULL DEFAULT 'new',
-  created_at TIMESTAMPTZ NOT NULL DEFAULT current_timestamp()
-);
+INSERT INTO shop.public.orders (customer_email, total, status)
+VALUES ('buyer@example.com', 49.90, 'new');
 ```
-
-Insert one sample order:
-
-```sql
-INSERT INTO shop.app.orders (customer_email, total)
-VALUES ('buyer@example.com', 49.90);
-```
-
-Read it back:
 
 ```sql
 SELECT customer_email, total, status
-FROM shop.app.orders
-ORDER BY created_at DESC
+FROM shop.public.orders
+ORDER BY customer_email
 LIMIT 10;
 ```
 
-Expect a row containing `buyer@example.com`, `49.90`, and `new`. To see the
-table in **Tables**, sign out and sign back in with **Database** set to `shop`.
+The result should contain `buyer@example.com`, `49.90`, and `new`. Use the
+top-bar database selector to return to `shop` if you switch databases. To
+add or alter columns beyond what the form supports, use a SQL client; schema
+changes are not allowed through the console's general SQL editor.
 
-To add another database for a separate workload, repeat the pattern with a new
-name, for example `CREATE DATABASE support;`. Databases share cluster capacity
-and users; adding one does not add nodes or storage.
+## Give an application its own login
 
-## 3. Connect a SQL client
+In **Manage**, open **Create user** and create `orders_app` with a unique,
+generated password. Enable initial access, select the `shop` database,
+choose **One table**, select `public.orders`, and choose **Editor**. Keep the
+password in your application's secret configuration.
 
-In the running job's **Deployment** section, click **Download CA certificate**.
-Keep the downloaded `r1-meshdb-ca.crt` file on the machine running your SQL client.
-Use the job's **SQL endpoint**, not its console URL.
+The table **Editor** preset allows `SELECT`, `INSERT`, `UPDATE`, and `DELETE`
+on that table, along with the access needed to connect to its database. For
+a read-only application, choose **Viewer** instead. These grants apply to
+the selected table, not every future table. Use **Manage > Access** to review
+or change them later; do not grant cluster administrator access to resolve an
+application permission error.
 
-With PostgreSQL's [`psql` client](https://www.postgresql.org/docs/17/app-psql.html)
-installed, run this in a **terminal**. Replace the host, port, and certificate
-path with your values (use a path without spaces for this example). Replace
-`user=app_user` too if you chose a different database user:
+User creation and its initial grant are separate operations. If the user is
+created but the grant fails, check **Users** and retry the grant in
+**Manage > Access** rather than creating a second user.
+
+Sign out, then sign in as `orders_app` with **Database** set to `shop`. Run
+the `SELECT` query above. It should return the sample order. Database names
+alone are not a tenant-isolation guarantee; review grants and inherited roles
+for sensitive workloads.
+
+## Connect a SQL client
+
+In the running Deeploy job's **Deployment** section, download the CA
+certificate. Keep `r1db-ca.crt` on the machine running the client. Use the
+job's **SQL endpoint**, not the browser console URL.
+
+With PostgreSQL's [`psql` client](https://www.postgresql.org/docs/17/app-psql.html),
+replace the host, port, and certificate path with your job's values:
 
 ```bash
-psql -W "host=YOUR_SQL_HOST port=YOUR_SQL_PORT dbname=shop user=app_user sslmode=verify-full sslrootcert=/absolute/path/r1-meshdb-ca.crt"
+psql -W "host=YOUR_SQL_HOST port=YOUR_SQL_PORT dbname=shop user=orders_app sslmode=verify-full sslrootcert=/absolute/path/r1db-ca.crt"
 ```
 
-Enter your configured database user's password when prompted. `-W` avoids
-putting it in the command or a URL. `verify-full` checks the CA and server
-hostname. Use the assigned hostname, not an IP substituted for it.
+Enter the `orders_app` password when prompted. `-W` keeps it out of the
+command line; `verify-full` checks both the CA and server hostname. Use the
+assigned hostname, not a substituted IP address. If the service's
+certificates are regenerated, download its current CA and update clients.
+Do not disable verification to bypass a certificate error.
 
-If certificates are regenerated, download the current CA and update your
-clients. Do not bypass certificate errors by disabling verification.
-
-## 4. Give your application its own login
-
-The configured user can create databases and manage non-admin users. It is not
-`root` or an `admin` member, but is still more powerful than most applications
-need. Keep it for database setup and create a separate runtime login.
-
-In the `psql` session opened as `app_user`, create a login:
-
-```sql
-CREATE USER orders_app;
-```
-
-Set a unique generated password using the `psql` prompt, rather than embedding
-the secret in SQL text. Enter it twice when asked, and store it in your password
-manager:
-
-```text
-\password orders_app
-```
-
-Allow it to connect to `shop`:
-
-```sql
-GRANT CONNECT ON DATABASE shop TO orders_app;
-```
-
-Allow access to the schema:
-
-```sql
-GRANT USAGE ON SCHEMA shop.app TO orders_app;
-```
-
-Grant only the table operations this example application needs:
-
-```sql
-GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE shop.app.orders TO orders_app;
-```
-
-For a read-only application, grant only `SELECT` instead. These grants cover
-this existing table, not every future table. Repeat the appropriate grants
-when adding tables; do not grant `admin` or database-management privileges just
-to resolve an application permission error.
-
-In the console, sign out, then sign in as `orders_app` with **Database** set to
-`shop`, and run the SELECT query above. It should return the sample order.
-Review grants and
-inherited roles when designing access controls; separate database names alone
-are not a tenant-isolation guarantee.
-
-## Application connection settings
-
-Use the SQL endpoint from the running job, not the console URL:
-
-| Setting | Value |
-|---|---|
-| Host and port | The assigned SQL tunnel hostname and port shown by Deeploy. |
-| Database | `shop` |
-| User | `orders_app` |
-| Password | The password created for this user, kept in your application's secret configuration. |
-| TLS mode | `verify-full`, or the driver's equivalent CA and hostname verification. |
-| CA certificate | The `r1-meshdb-ca.crt` downloaded from this job. |
-
-To test these settings in `psql`, exit the operator session with `\q`, then
-repeat the terminal command from step 3 with `user=orders_app`. Enter the new
-user's password, not the operator password.
-
-PostgreSQL-compatible drivers can connect, but check SQL and extension
-compatibility for your application. For transactions, handle retryable
-serialization errors (`SQLSTATE 40001`) using your driver's transaction retry
-pattern. Keep backups outside this cluster before storing important data.
+For advanced schema changes, migrations, or transactions, use a SQL client
+rather than the console SQL editor. PostgreSQL-compatible drivers can
+connect, but check SQL and extension compatibility for your application.
+Handle retryable serialization errors (`SQLSTATE 40001`) with your driver's
+transaction retry pattern. Keep backups outside the cluster before storing
+important data.
 
 ## Sources
 
-- [MeshDB database/user bootstrap](https://github.com/Ratio1/r1-meshdb/blob/e638553f899bdc8578afcdc2c3c1e37e1e8163b8/entrypoint.sh)
-- [SQL reference: CREATE DATABASE](https://www.cockroachlabs.com/docs/v23.1/create-database),
-  [CREATE USER](https://www.cockroachlabs.com/docs/v23.1/create-user), and
-  [GRANT](https://www.cockroachlabs.com/docs/v23.1/grant)
+- [R1DB console implementation](https://github.com/Ratio1/r1db/blob/c057e55a1c42b7edecc1d4b23ce87b839a1d3a0c/engine/pkg/ui/distoss/assets/bundle.js)
+- [R1DB console management API](https://github.com/Ratio1/r1db/blob/c057e55a1c42b7edecc1d4b23ce87b839a1d3a0c/engine/pkg/server/api_v2_r1db.go)
+- [R1DB deployment bootstrap](https://github.com/Ratio1/r1db/blob/c057e55a1c42b7edecc1d4b23ce87b839a1d3a0c/entrypoint.sh)
 - [PostgreSQL client TLS verification](https://www.postgresql.org/docs/17/libpq-ssl.html)
