@@ -35,7 +35,7 @@ mapping. “Private only” means the template does not publish an application p
 | Moodle | Learning-management system | CAR | Public/private HTTP | Application and uploaded data | Database host/port/name/user/password plus initial admin username/password/email |
 | Matrix Synapse | Matrix homeserver | CAR | Public/private HTTP | Homeserver configuration/data | Public server name and anonymous-statistics choice |
 | OpenBao | Secrets and encryption management | CAR | Public/private HTTP | OpenBao data and logs | None at job creation; initialize and secure after deployment |
-| [R1DB](./r1-meshdb/) | Multi-node distributed SQL database | CAR | Public SQL TCP tunnel and HTTPS console | Per-node database data | Database name, database user, password, and at least three distinct explicit target nodes |
+| [R1DB](./r1db/) | Multi-node distributed SQL database | CAR | Public SQL TCP tunnel and HTTPS console | Per-node database data | Database name, database user, password, and at least three distinct explicit target nodes |
 | GitHub Runner | Self-hosted GitHub Actions runner | CAR | Private only | Runner work directory | Access token, repository/organization URL, scope, runner name, labels, and ephemeral choice |
 
 GitLab and EMQX are not active catalog entries and are intentionally omitted.
@@ -78,6 +78,6 @@ for custom plugin pipelines.
 ## Review and public sources
 
 - Reviewed on **August 6, 2026** against the active service entries and validation schemas in shared Deeploy `develop`.
-- R1DB entry updated on **September 29, 2026**; see the [R1DB guide and sources](./r1-meshdb/).
+- R1DB entry updated on **September 29, 2026**; see the [R1DB guide and sources](./r1db/).
 - [Ratio1 Deeploy application](https://deeploy.ratio1.ai/)
 - [Worker App Runner overview](https://ratio1.ai/blog/deploy-your-app-with-ratio1-s-worker-app-runner-no-ci-cd-required)

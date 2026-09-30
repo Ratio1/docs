@@ -7,7 +7,7 @@ description: Create an R1DB service job, choose nodes and credentials, and verif
 # How to Deeploy R1DB
 
 This guide creates a **fresh cluster**. It does not migrate an existing
-CockroachDB or R1 MeshDB job.
+CockroachDB or R1DB job.
 
 ## Before you start
 
